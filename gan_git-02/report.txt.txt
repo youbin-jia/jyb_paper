@@ -1,0 +1,1305 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 71 files
+Detected 69 issues that require attention
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+File: /content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/architectures/arch_ops_test.py
+--------------------------------------------------------------------------------
+/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/architectures/arch_ops_test.py:40:19: ERROR: Using member tf.contrib.layers.batch_norm in deprecated module tf.contrib. tf.contrib.layers.batch_norm cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+--------------------------------------------------------------------------------
+File: /content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/architectures/arch_ops_tpu_test.py
+--------------------------------------------------------------------------------
+/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/architectures/arch_ops_tpu_test.py:70:19: ERROR: Using member tf.contrib.layers.batch_norm in deprecated module tf.contrib. tf.contrib.layers.batch_norm cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/architectures/arch_ops_tpu_test.py:95:19: ERROR: Using member tf.contrib.layers.batch_norm in deprecated module tf.contrib. tf.contrib.layers.batch_norm cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+--------------------------------------------------------------------------------
+File: /content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/gans/modular_gan.py
+--------------------------------------------------------------------------------
+/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/gans/modular_gan.py:550:16: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+--------------------------------------------------------------------------------
+File: /content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/eval_gan_lib.py
+--------------------------------------------------------------------------------
+/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/eval_gan_lib.py:159:26: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+--------------------------------------------------------------------------------
+File: /content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/eval_utils.py
+--------------------------------------------------------------------------------
+/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/eval_utils.py:114:17: WARNING: Changing dataset.make_one_shot_iterator() to tf.compat.v1.data.make_one_shot_iterator(dataset). Please check this transformation.
+
+--------------------------------------------------------------------------------
+File: /content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/metrics/jacobian_conditioning_test.py
+--------------------------------------------------------------------------------
+/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/metrics/jacobian_conditioning_test.py:69:9: ERROR: Using member tf.contrib.layers.fully_connected in deprecated module tf.contrib. tf.contrib.layers.fully_connected cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/metrics/jacobian_conditioning_test.py:70:9: ERROR: Using member tf.contrib.layers.fully_connected in deprecated module tf.contrib. tf.contrib.layers.fully_connected cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/metrics/jacobian_conditioning_test.py:71:8: ERROR: Using member tf.contrib.layers.fully_connected in deprecated module tf.contrib. tf.contrib.layers.fully_connected cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/metrics/jacobian_conditioning_test.py:83:9: ERROR: Using member tf.contrib.layers.fully_connected in deprecated module tf.contrib. tf.contrib.layers.fully_connected cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/metrics/jacobian_conditioning_test.py:84:9: ERROR: Using member tf.contrib.layers.fully_connected in deprecated module tf.contrib. tf.contrib.layers.fully_connected cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/metrics/jacobian_conditioning_test.py:85:8: ERROR: Using member tf.contrib.layers.fully_connected in deprecated module tf.contrib. tf.contrib.layers.fully_connected cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+--------------------------------------------------------------------------------
+File: /content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/tpu/tpu_summaries.py
+--------------------------------------------------------------------------------
+/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/tpu/tpu_summaries.py:50:10: ERROR: Using member tf.contrib.summary in deprecated module tf.contrib. tf.contrib.summary cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+--------------------------------------------------------------------------------
+File: /content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/datasets_test.py
+--------------------------------------------------------------------------------
+/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/datasets_test.py:56:19: WARNING: Changing dataset.make_one_shot_iterator() to tf.compat.v1.data.make_one_shot_iterator(dataset). Please check this transformation.
+
+/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/datasets_test.py:84:17: WARNING: Changing dataset.make_initializable_iterator() to tf.compat.v1.data.make_initializable_iterator(dataset). Please check this transformation.
+
+--------------------------------------------------------------------------------
+File: /content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/metrics/gilbo.py
+--------------------------------------------------------------------------------
+/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/metrics/gilbo.py:161:20: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/metrics/gilbo.py:163:17: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/metrics/gilbo.py:167:21: ERROR: Using member tf.contrib.framework.get_variables in deprecated module tf.contrib. tf.contrib.framework.get_variables cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/metrics/gilbo.py:173:6: ERROR: Using member tf.contrib.framework.get_variables_by_name in deprecated module tf.contrib. tf.contrib.framework.get_variables_by_name cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/metrics/gilbo.py:194:12: WARNING: Changing dataset.make_one_shot_iterator() to tf.compat.v1.data.make_one_shot_iterator(dataset). Please check this transformation.
+
+/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/metrics/gilbo.py:199:11: WARNING: Changing dataset.make_one_shot_iterator() to tf.compat.v1.data.make_one_shot_iterator(dataset). Please check this transformation.
+
+/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/metrics/gilbo.py:471:4: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/metrics/gilbo.py:515:2: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+--------------------------------------------------------------------------------
+File: /content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/hooks.py
+--------------------------------------------------------------------------------
+/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/hooks.py:28:31: ERROR: Using member tf.contrib.tpu.AsyncCheckpointSaverHook in deprecated module tf.contrib. tf.contrib.tpu.AsyncCheckpointSaverHook cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+--------------------------------------------------------------------------------
+File: /content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/architectures/resnet_biggan_deep.py
+--------------------------------------------------------------------------------
+/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/architectures/resnet_biggan_deep.py:423:17: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+--------------------------------------------------------------------------------
+File: /content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/tpu/tpu_random_test.py
+--------------------------------------------------------------------------------
+/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/tpu/tpu_random_test.py:93:10: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/tpu/tpu_random_test.py:124:10: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/tpu/tpu_random_test.py:148:14: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/tpu/tpu_random_test.py:149:21: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+--------------------------------------------------------------------------------
+File: /content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/gans/s3gan.py
+--------------------------------------------------------------------------------
+/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/gans/s3gan.py:164:15: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+--------------------------------------------------------------------------------
+File: /content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/tpu/tpu_random.py
+--------------------------------------------------------------------------------
+/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/tpu/tpu_random.py:143:9: ERROR: Using member tf.contrib.stateless.stateless_random_uniform in deprecated module tf.contrib. tf.contrib.stateless.stateless_random_uniform cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/tpu/tpu_random.py:153:9: ERROR: Using member tf.contrib.stateless.stateless_random_normal in deprecated module tf.contrib. tf.contrib.stateless.stateless_random_normal cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+--------------------------------------------------------------------------------
+File: /content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/architectures/arch_ops.py
+--------------------------------------------------------------------------------
+/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/architectures/arch_ops.py:88:16: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/architectures/arch_ops.py:95:20: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/architectures/arch_ops.py:145:16: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/architectures/arch_ops.py:151:20: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/architectures/arch_ops.py:157:19: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/architectures/arch_ops.py:163:19: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/architectures/arch_ops.py:354:14: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/architectures/arch_ops.py:361:13: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/architectures/arch_ops.py:449:9: WARNING: tf.contrib.layers.layer_norm requires manual check. (Manual edit required) `tf.contrib.layers.layer_norm` has been deprecated, and its implementation has been integrated with `tf.keras.layers.LayerNormalization` in TensorFlow 2.0. Note that, the default value of `epsilon` is changed to `1e-3` in the new API from `1e-12`, and this may introduce numerical differences. Please check the new API and use that instead.
+/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/architectures/arch_ops.py:449:9: ERROR: Using member tf.contrib.layers.layer_norm in deprecated module tf.contrib. tf.contrib.layers.layer_norm cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/architectures/arch_ops.py:492:10: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/architectures/arch_ops.py:543:13: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/architectures/arch_ops.py:551:13: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/architectures/arch_ops.py:563:8: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/architectures/arch_ops.py:570:13: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/architectures/arch_ops.py:583:8: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/architectures/arch_ops.py:590:11: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/architectures/arch_ops.py:608:10: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/architectures/arch_ops.py:614:10: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/architectures/arch_ops.py:616:10: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/architectures/arch_ops.py:623:10: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/architectures/arch_ops.py:624:10: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/architectures/arch_ops.py:625:10: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/architectures/arch_ops.py:643:10: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/architectures/arch_ops.py:651:10: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/architectures/arch_ops.py:653:10: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/architectures/arch_ops.py:659:10: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/architectures/arch_ops.py:660:10: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/architectures/arch_ops.py:661:10: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/architectures/arch_ops.py:681:10: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/architectures/arch_ops.py:689:10: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/architectures/arch_ops.py:691:10: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/architectures/arch_ops.py:697:10: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/architectures/arch_ops.py:698:10: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/architectures/arch_ops.py:699:10: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/architectures/arch_ops.py:755:12: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+--------------------------------------------------------------------------------
+File: /content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/architectures/resnet_biggan.py
+--------------------------------------------------------------------------------
+/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/architectures/resnet_biggan.py:415:17: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+================================================================================
+Detailed log follows:
+
+================================================================================
+================================================================================
+Input tree: '/content/drive/My Drive/drive/gan/gan_git-01/'
+================================================================================
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/setup.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/setup.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/datasets.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/datasets.py'
+--------------------------------------------------------------------------------
+
+216:21: INFO: Renamed 'tf.FixedLenFeature' to 'tf.io.FixedLenFeature'
+217:17: INFO: Renamed 'tf.FixedLenFeature' to 'tf.io.FixedLenFeature'
+219:19: INFO: Added keywords to args of function 'tf.parse_single_example'
+219:19: INFO: Renamed 'tf.parse_single_example' to 'tf.io.parse_single_example'
+221:8: INFO: tf.assert_equal requires manual check. tf.assert_equal has been changed to return None, the data argument has been removed, and arguments have been reordered.
+The calls have been converted to compat.v1 for safety (even though  they may already have been correct).
+221:8: INFO: Renamed 'tf.assert_equal' to 'tf.compat.v1.assert_equal'
+390:12: INFO: Renamed 'tf.image.resize_image_with_crop_or_pad' to 'tf.image.resize_with_crop_or_pad'
+392:12: INFO: Renamed 'tf.image.resize_images' to 'tf.image.resize'
+423:12: INFO: Renamed 'tf.image.resize_image_with_crop_or_pad' to 'tf.image.resize_with_crop_or_pad'
+444:21: INFO: Added keywords to args of function 'tf.image.sample_distorted_bounding_box'
+445:8: INFO: Added keywords to args of function 'tf.shape'
+456:4: INFO: Renamed 'tf.set_random_seed' to 'tf.compat.v1.set_random_seed'
+457:12: INFO: Added keywords to args of function 'tf.shape'
+465:12: INFO: Added keywords to args of function 'tf.shape'
+474:10: INFO: Renamed 'tf.image.resize_images' to 'tf.image.resize'
+548:11: INFO: Added keywords to args of function 'tf.math.reduce_min'
+548:30: INFO: Added keywords to args of function 'tf.shape'
+610:21: INFO: Renamed 'tf.FixedLenFeature' to 'tf.io.FixedLenFeature'
+611:17: INFO: Renamed 'tf.FixedLenFeature' to 'tf.io.FixedLenFeature'
+613:19: INFO: Added keywords to args of function 'tf.parse_single_example'
+613:19: INFO: Renamed 'tf.parse_single_example' to 'tf.io.parse_single_example'
+615:8: INFO: tf.assert_equal requires manual check. tf.assert_equal has been changed to return None, the data argument has been removed, and arguments have been reordered.
+The calls have been converted to compat.v1 for safety (even though  they may already have been correct).
+615:8: INFO: Renamed 'tf.assert_equal' to 'tf.compat.v1.assert_equal'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/datasets_test.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/datasets_test.py'
+--------------------------------------------------------------------------------
+
+42:2: INFO: Renamed 'tf.set_random_seed' to 'tf.compat.v1.set_random_seed'
+56:19: WARNING: Changing dataset.make_one_shot_iterator() to tf.compat.v1.data.make_one_shot_iterator(dataset). Please check this transformation.
+
+84:17: WARNING: Changing dataset.make_initializable_iterator() to tf.compat.v1.data.make_initializable_iterator(dataset). Please check this transformation.
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/eval_utils.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/eval_utils.py'
+--------------------------------------------------------------------------------
+
+114:17: WARNING: Changing dataset.make_one_shot_iterator() to tf.compat.v1.data.make_one_shot_iterator(dataset). Please check this transformation.
+
+120:9: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+167:6: INFO: tf.assert_greater_equal requires manual check. tf.assert_greater_equal has been changed to return None, the data argument has been removed, and arguments have been reordered.
+The calls have been converted to compat.v1 for safety (even though  they may already have been correct).
+167:6: INFO: Renamed 'tf.assert_greater_equal' to 'tf.compat.v1.assert_greater_equal'
+168:6: INFO: tf.assert_less_equal requires manual check. tf.assert_less_equal has been changed to return None, the data argument has been removed, and arguments have been reordered.
+The calls have been converted to compat.v1 for safety (even though  they may already have been correct).
+168:6: INFO: Renamed 'tf.assert_less_equal' to 'tf.compat.v1.assert_less_equal'
+191:7: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+192:25: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/hooks.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/hooks.py'
+--------------------------------------------------------------------------------
+
+28:31: ERROR: Using member tf.contrib.tpu.AsyncCheckpointSaverHook in deprecated module tf.contrib. tf.contrib.tpu.AsyncCheckpointSaverHook cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+49:18: INFO: Renamed 'tf.train.SessionRunHook' to 'tf.estimator.SessionRunHook'
+69:18: INFO: Renamed 'tf.train.SecondOrStepTimer' to 'tf.estimator.SecondOrStepTimer'
+73:31: INFO: Renamed 'tf.train.get_global_step' to 'tf.compat.v1.train.get_global_step'
+86:11: INFO: Renamed 'tf.train.SessionRunArgs' to 'tf.estimator.SessionRunArgs'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/eval_gan_lib_test.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/eval_gan_lib_test.py'
+--------------------------------------------------------------------------------
+
+59:13: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+62:24: INFO: Renamed 'tf.layers.flatten' to 'tf.compat.v1.layers.flatten'
+93:29: INFO: Renamed 'tf.test.get_temp_dir' to 'tf.compat.v1.test.get_temp_dir'
+94:4: INFO: Renamed 'tf.logging.info' to 'tf.compat.v1.logging.info'
+95:17: INFO: Renamed 'tf.contrib.tpu.RunConfig' to 'tf.compat.v1.estimator.tpu.RunConfig'
+115:4: INFO: Renamed 'tf.logging.info' to 'tf.compat.v1.logging.info'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/eval_gan_lib.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/eval_gan_lib.py'
+--------------------------------------------------------------------------------
+
+78:37: INFO: Renamed 'tf.global_variables' to 'tf.compat.v1.global_variables'
+83:12: INFO: Renamed 'tf.assign' to 'tf.compat.v1.assign'
+90:12: INFO: Renamed 'tf.assign' to 'tf.compat.v1.assign'
+123:4: INFO: Renamed 'tf.set_random_seed' to 'tf.compat.v1.set_random_seed'
+124:9: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+126:17: INFO: Renamed 'tf.contrib.tpu.initialize_system' to 'tf.compat.v1.tpu.initialize_system'
+149:20: INFO: Renamed 'tf.contrib.tpu.rewrite' to 'tf.compat.v1.tpu.rewrite'
+153:6: INFO: Renamed 'tf.global_variables_initializer' to 'tf.compat.v1.global_variables_initializer'
+157:16: INFO: Renamed 'tf.train.Saver' to 'tf.compat.v1.train.Saver'
+159:26: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/main.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/main.py'
+--------------------------------------------------------------------------------
+
+74:9: INFO: Renamed 'tf.contrib.cluster_resolver.TPUClusterResolver' to 'tf.distribute.cluster_resolver.TPUClusterResolver'
+86:15: INFO: Renamed 'tf.contrib.tpu.TPUConfig' to 'tf.compat.v1.estimator.tpu.TPUConfig'
+89:9: INFO: Renamed 'tf.contrib.tpu.RunConfig' to 'tf.compat.v1.estimator.tpu.RunConfig'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/__init__.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/__init__.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/runner_lib_test.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/runner_lib_test.py'
+--------------------------------------------------------------------------------
+
+54:23: INFO: Renamed 'tf.train.GradientDescentOptimizer' to 'tf.compat.v1.train.GradientDescentOptimizer'
+69:19: INFO: Renamed 'tf.contrib.tpu.RunConfig' to 'tf.compat.v1.estimator.tpu.RunConfig'
+84:6: INFO: Renamed 'tf.logging.info' to 'tf.compat.v1.logging.info'
+128:19: INFO: Renamed 'tf.contrib.tpu.RunConfig' to 'tf.compat.v1.estimator.tpu.RunConfig'
+144:6: INFO: Renamed 'tf.logging.info' to 'tf.compat.v1.logging.info'
+165:17: INFO: Renamed 'tf.contrib.tpu.RunConfig' to 'tf.compat.v1.estimator.tpu.RunConfig'
+167:19: INFO: Renamed 'tf.contrib.tpu.TPUConfig' to 'tf.compat.v1.estimator.tpu.TPUConfig'
+182:40: INFO: Renamed 'tf.gfile.ListDirectory' to 'tf.io.gfile.listdir'
+198:17: INFO: Renamed 'tf.contrib.tpu.RunConfig' to 'tf.compat.v1.estimator.tpu.RunConfig'
+200:19: INFO: Renamed 'tf.contrib.tpu.TPUConfig' to 'tf.compat.v1.estimator.tpu.TPUConfig'
+215:40: INFO: Renamed 'tf.gfile.ListDirectory' to 'tf.io.gfile.listdir'
+231:17: INFO: Renamed 'tf.contrib.tpu.RunConfig' to 'tf.compat.v1.estimator.tpu.RunConfig'
+233:19: INFO: Renamed 'tf.contrib.tpu.TPUConfig' to 'tf.compat.v1.estimator.tpu.TPUConfig'
+255:8: INFO: Renamed 'tf.gfile.ListDirectory' to 'tf.io.gfile.listdir'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/runner_lib.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/runner_lib.py'
+--------------------------------------------------------------------------------
+
+60:7: INFO: Renamed 'tf.gfile.Open' to 'tf.io.gfile.GFile'
+125:9: INFO: Renamed 'tf.gfile.Open' to 'tf.io.gfile.GFile'
+129:11: INFO: Renamed 'tf.gfile.Exists' to 'tf.io.gfile.exists'
+197:20: INFO: Renamed 'tf.gfile.Glob' to 'tf.io.gfile.glob'
+212:23: INFO: Renamed 'tf.gfile.Exists' to 'tf.io.gfile.exists'
+214:11: INFO: Renamed 'tf.gfile.Open' to 'tf.io.gfile.GFile'
+222:9: INFO: Renamed 'tf.gfile.Open' to 'tf.io.gfile.GFile'
+227:11: INFO: Renamed 'tf.gfile.Exists' to 'tf.io.gfile.exists'
+229:9: INFO: Renamed 'tf.gfile.Open' to 'tf.io.gfile.GFile'
+263:11: INFO: Renamed 'tf.gfile.Exists' to 'tf.io.gfile.exists'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/test_utils.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/test_utils.py'
+--------------------------------------------------------------------------------
+
+49:18: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+52:23: INFO: Renamed 'tf.layers.flatten' to 'tf.compat.v1.layers.flatten'
+82:8: INFO: Added keywords to args of function 'tf.reduce_mean'
+106:15: INFO: Renamed 'tf.gfile.Exists' to 'tf.io.gfile.exists'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/utils.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/utils.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/tpu/tpu_summaries.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/tpu/tpu_summaries.py'
+--------------------------------------------------------------------------------
+
+50:10: ERROR: Using member tf.contrib.summary in deprecated module tf.contrib. tf.contrib.summary cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+85:13: INFO: Added keywords to args of function 'tf.convert_to_tensor'
+95:18: INFO: Renamed 'tf.train.get_or_create_global_step' to 'tf.compat.v1.train.get_or_create_global_step'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/tpu/tpu_ops_test.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/tpu/tpu_ops_test.py'
+--------------------------------------------------------------------------------
+
+55:18: INFO: Renamed 'tf.contrib.tpu.batch_parallel' to 'tf.compat.v1.tpu.batch_parallel'
+61:17: INFO: Renamed 'tf.contrib.tpu.initialize_system' to 'tf.compat.v1.tpu.initialize_system'
+62:17: INFO: Renamed 'tf.global_variables_initializer' to 'tf.compat.v1.global_variables_initializer'
+92:10: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+93:10: INFO: Renamed 'tf.contrib.tpu.batch_parallel' to 'tf.compat.v1.tpu.batch_parallel'
+95:17: INFO: Renamed 'tf.contrib.tpu.initialize_system' to 'tf.compat.v1.tpu.initialize_system'
+119:10: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+120:10: INFO: Renamed 'tf.contrib.tpu.batch_parallel' to 'tf.compat.v1.tpu.batch_parallel'
+122:17: INFO: Renamed 'tf.contrib.tpu.initialize_system' to 'tf.compat.v1.tpu.initialize_system'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/tpu/tpu_random_test.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/tpu/tpu_random_test.py'
+--------------------------------------------------------------------------------
+
+61:20: INFO: Renamed 'tf.layers.dense' to 'tf.compat.v1.layers.dense'
+62:13: INFO: tf.losses.mean_squared_error requires manual check. tf.losses have been replaced with object oriented versions in TF 2.0 and after. The loss function calls have been converted to compat.v1 for backward compatibility. Please update these calls to the TF 2.0 versions.
+62:13: INFO: Renamed 'tf.losses.mean_squared_error' to 'tf.compat.v1.losses.mean_squared_error'
+63:18: INFO: Renamed 'tf.train.GradientDescentOptimizer' to 'tf.compat.v1.train.GradientDescentOptimizer'
+65:20: INFO: Renamed 'tf.contrib.tpu.CrossShardOptimizer' to 'tf.compat.v1.tpu.CrossShardOptimizer'
+68:30: INFO: Renamed 'tf.train.get_or_create_global_step' to 'tf.compat.v1.train.get_or_create_global_step'
+69:13: INFO: Renamed 'tf.contrib.tpu.TPUEstimatorSpec' to 'tf.compat.v1.estimator.tpu.TPUEstimatorSpec'
+74:7: INFO: Renamed 'tf.gfile.Exists' to 'tf.io.gfile.exists'
+75:6: INFO: Renamed 'tf.gfile.DeleteRecursively' to 'tf.io.gfile.rmtree'
+76:17: INFO: Renamed 'tf.contrib.tpu.RunConfig' to 'tf.compat.v1.estimator.tpu.RunConfig'
+79:19: INFO: Renamed 'tf.contrib.tpu.TPUConfig' to 'tf.compat.v1.estimator.tpu.TPUConfig'
+80:16: INFO: Renamed 'tf.contrib.tpu.TPUEstimator' to 'tf.compat.v1.estimator.tpu.TPUEstimator'
+93:10: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+93:10: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+96:19: INFO: Renamed 'tf.contrib.tpu.cross_replica_sum' to 'tf.compat.v1.tpu.cross_replica_sum'
+97:13: INFO: Renamed 'tf.assign' to 'tf.compat.v1.assign'
+106:22: INFO: Renamed 'tf.gfile.Exists' to 'tf.io.gfile.exists'
+124:10: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+124:10: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+127:19: INFO: Renamed 'tf.contrib.tpu.cross_replica_sum' to 'tf.compat.v1.tpu.cross_replica_sum'
+128:13: INFO: Renamed 'tf.assign' to 'tf.compat.v1.assign'
+135:22: INFO: Renamed 'tf.gfile.Exists' to 'tf.io.gfile.exists'
+148:14: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+148:14: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+149:21: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+149:21: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+151:21: INFO: Renamed 'tf.contrib.tpu.cross_replica_sum' to 'tf.compat.v1.tpu.cross_replica_sum'
+152:22: INFO: Renamed 'tf.assign' to 'tf.compat.v1.assign'
+153:22: INFO: Renamed 'tf.assign' to 'tf.compat.v1.assign'
+159:22: INFO: Renamed 'tf.gfile.Exists' to 'tf.io.gfile.exists'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/tpu/tpu_ops.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/tpu/tpu_ops.py'
+--------------------------------------------------------------------------------
+
+49:7: INFO: Using default_name as name in call to name_scope.
+
+51:11: INFO: Changed tf.to_float call to tf.cast(..., dtype=tf.float32).
+57:22: INFO: Changed tf.to_float call to tf.cast(..., dtype=tf.float32).
+70:13: INFO: Renamed 'tf.contrib.tpu.cross_replica_sum' to 'tf.compat.v1.tpu.cross_replica_sum'
+90:9: INFO: Renamed 'tf.contrib.tpu.cross_replica_sum' to 'tf.compat.v1.tpu.cross_replica_sum'
+110:9: INFO: Added keywords to args of function 'tf.math.reduce_mean'
+117:22: INFO: Added keywords to args of function 'tf.reduce_mean'
+122:15: INFO: Added keywords to args of function 'tf.math.reduce_mean'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/tpu/tpu_random.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/tpu/tpu_random.py'
+--------------------------------------------------------------------------------
+
+106:7: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+106:7: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+143:9: ERROR: Using member tf.contrib.stateless.stateless_random_uniform in deprecated module tf.contrib. tf.contrib.stateless.stateless_random_uniform cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+153:9: ERROR: Using member tf.contrib.stateless.stateless_random_normal in deprecated module tf.contrib. tf.contrib.stateless.stateless_random_normal cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/tpu/__init__.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/tpu/__init__.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/gans/abstract_gan.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/gans/abstract_gan.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/gans/loss_lib.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/gans/loss_lib.py'
+--------------------------------------------------------------------------------
+
+67:7: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+67:7: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+69:18: INFO: Added keywords to args of function 'tf.reduce_mean'
+72:18: INFO: Added keywords to args of function 'tf.reduce_mean'
+76:13: INFO: Added keywords to args of function 'tf.reduce_mean'
+96:7: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+96:7: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+98:19: INFO: Added keywords to args of function 'tf.reduce_mean'
+99:18: INFO: Added keywords to args of function 'tf.reduce_mean'
+119:7: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+119:7: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+121:18: INFO: Added keywords to args of function 'tf.reduce_mean'
+122:18: INFO: Added keywords to args of function 'tf.reduce_mean'
+124:19: INFO: Added keywords to args of function 'tf.reduce_mean'
+142:7: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+142:7: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+144:18: INFO: Added keywords to args of function 'tf.reduce_mean'
+145:18: INFO: Added keywords to args of function 'tf.reduce_mean'
+147:15: INFO: Added keywords to args of function 'tf.reduce_mean'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/gans/consts.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/gans/consts.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/gans/modular_gan.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/gans/modular_gan.py'
+--------------------------------------------------------------------------------
+
+70:30: INFO: Renamed 'tf.train.AdamOptimizer' to 'tf.compat.v1.train.AdamOptimizer'
+234:21: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+267:33: INFO: Renamed 'tf.trainable_variables' to 'tf.compat.v1.trainable_variables'
+282:13: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+306:26: INFO: Renamed 'tf.GraphKeys' to 'tf.compat.v1.GraphKeys'
+347:13: INFO: Renamed 'tf.trainable_variables' to 'tf.compat.v1.trainable_variables'
+397:4: INFO: Renamed 'tf.set_random_seed' to 'tf.compat.v1.set_random_seed'
+446:11: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+446:11: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+460:11: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+460:11: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+478:17: INFO: Renamed 'tf.get_collection' to 'tf.compat.v1.get_collection'
+478:35: INFO: Renamed 'tf.GraphKeys' to 'tf.compat.v1.GraphKeys'
+492:17: INFO: Renamed 'tf.get_collection' to 'tf.compat.v1.get_collection'
+492:35: INFO: Renamed 'tf.GraphKeys' to 'tf.compat.v1.GraphKeys'
+500:13: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+500:13: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+550:16: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+550:16: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+559:15: INFO: Renamed 'tf.train.get_or_create_global_step' to 'tf.compat.v1.train.get_or_create_global_step'
+570:29: INFO: Added keywords to args of function 'tf.cond'
+577:11: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+577:11: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+583:11: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+583:11: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+598:11: INFO: Renamed 'tf.contrib.tpu.TPUEstimatorSpec' to 'tf.compat.v1.estimator.tpu.TPUEstimatorSpec'
+609:12: INFO: Renamed 'tf.contrib.tpu.CrossShardOptimizer' to 'tf.compat.v1.tpu.CrossShardOptimizer'
+615:12: INFO: Renamed 'tf.contrib.tpu.CrossShardOptimizer' to 'tf.compat.v1.tpu.CrossShardOptimizer'
+649:11: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+649:11: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+652:11: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+652:11: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/gans/modular_gan_conditional_test.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/gans/modular_gan_conditional_test.py'
+--------------------------------------------------------------------------------
+
+56:17: INFO: Renamed 'tf.contrib.tpu.RunConfig' to 'tf.compat.v1.estimator.tpu.RunConfig'
+58:19: INFO: Renamed 'tf.contrib.tpu.TPUConfig' to 'tf.compat.v1.estimator.tpu.TPUConfig'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/gans/s3gan.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/gans/s3gan.py'
+--------------------------------------------------------------------------------
+
+119:8: INFO: Added keywords to args of function 'tf.reduce_sum'
+125:11: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+125:61: INFO: Renamed 'tf.AUTO_REUSE' to 'tf.compat.v1.AUTO_REUSE'
+140:11: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+140:62: INFO: Renamed 'tf.AUTO_REUSE' to 'tf.compat.v1.AUTO_REUSE'
+148:14: INFO: Renamed 'tf.arg_max' to 'tf.argmax'
+156:16: INFO: Added keywords to args of function 'tf.reduce_sum'
+161:9: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+161:61: INFO: Renamed 'tf.AUTO_REUSE' to 'tf.compat.v1.AUTO_REUSE'
+164:15: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+164:15: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+166:22: INFO: tf.initializers.glorot_normal requires manual check. Initializers no longer have the dtype argument in the constructor or partition_info argument in the __call__ method.
+The calls have been converted to compat.v1 for safety (even though they may already have been correct).
+166:22: INFO: Renamed 'tf.initializers.glorot_normal' to 'tf.compat.v1.initializers.glorot_normal'
+288:22: INFO: Renamed 'tf.log' to 'tf.math.log'
+289:22: INFO: Renamed 'tf.log' to 'tf.math.log'
+290:19: INFO: Added keywords to args of function 'tf.reduce_mean'
+290:34: INFO: Added keywords to args of function 'tf.reduce_sum'
+291:19: INFO: Added keywords to args of function 'tf.reduce_mean'
+291:34: INFO: Added keywords to args of function 'tf.reduce_sum'
+296:10: INFO: Renamed 'tf.arg_max' to 'tf.argmax'
+298:10: INFO: Renamed 'tf.arg_max' to 'tf.argmax'
+299:22: INFO: tf.metrics.accuracy requires manual check. tf.metrics have been replaced with object oriented versions in TF 2.0 and after. The metric function calls have been converted to compat.v1 for backward compatibility. Please update these calls to the TF 2.0 versions.
+299:22: INFO: Renamed 'tf.metrics.accuracy' to 'tf.compat.v1.metrics.accuracy'
+300:22: INFO: tf.metrics.accuracy requires manual check. tf.metrics have been replaced with object oriented versions in TF 2.0 and after. The metric function calls have been converted to compat.v1 for backward compatibility. Please update these calls to the TF 2.0 versions.
+300:22: INFO: Renamed 'tf.metrics.accuracy' to 'tf.compat.v1.metrics.accuracy'
+315:24: INFO: tf.losses.softmax_cross_entropy requires manual check. tf.losses have been replaced with object oriented versions in TF 2.0 and after. The loss function calls have been converted to compat.v1 for backward compatibility. Please update these calls to the TF 2.0 versions.
+315:24: INFO: Renamed 'tf.losses.softmax_cross_entropy' to 'tf.compat.v1.losses.softmax_cross_entropy'
+321:45: INFO: Added keywords to args of function 'tf.reduce_mean'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/gans/modular_gan_test.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/gans/modular_gan_test.py'
+--------------------------------------------------------------------------------
+
+61:22: INFO: Renamed 'tf.contrib.tpu.RunConfig' to 'tf.compat.v1.estimator.tpu.RunConfig'
+63:19: INFO: Renamed 'tf.contrib.tpu.TPUConfig' to 'tf.compat.v1.estimator.tpu.TPUConfig'
+135:4: INFO: Renamed 'tf.logging.info' to 'tf.compat.v1.logging.info'
+152:17: INFO: Renamed 'tf.contrib.tpu.RunConfig' to 'tf.compat.v1.estimator.tpu.RunConfig'
+155:19: INFO: Renamed 'tf.contrib.tpu.TPUConfig' to 'tf.compat.v1.estimator.tpu.TPUConfig'
+169:22: INFO: Renamed 'tf.gfile.Exists' to 'tf.io.gfile.exists'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/gans/modular_gan_tpu_test.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/gans/modular_gan_tpu_test.py'
+--------------------------------------------------------------------------------
+
+38:22: INFO: Renamed 'tf.contrib.tpu.RunConfig' to 'tf.compat.v1.estimator.tpu.RunConfig'
+40:19: INFO: Renamed 'tf.contrib.tpu.TPUConfig' to 'tf.compat.v1.estimator.tpu.TPUConfig'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/gans/penalty_lib.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/gans/penalty_lib.py'
+--------------------------------------------------------------------------------
+
+46:7: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+46:7: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+47:13: INFO: Added keywords to args of function 'tf.nn.moments'
+52:16: INFO: Added keywords to args of function 'tf.gradients'
+53:30: INFO: Added keywords to args of function 'tf.reduce_sum'
+53:30: INFO: Renamed keyword argument for tf.reduce_sum from reduction_indices to axis
+55:23: INFO: Added keywords to args of function 'tf.reduce_mean'
+73:7: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+73:7: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+78:16: INFO: Added keywords to args of function 'tf.gradients'
+79:30: INFO: Added keywords to args of function 'tf.reduce_sum'
+79:30: INFO: Renamed keyword argument for tf.reduce_sum from reduction_indices to axis
+81:23: INFO: Added keywords to args of function 'tf.reduce_mean'
+98:7: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+98:7: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+101:11: INFO: Added keywords to args of function 'tf.reduce_mean'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/gans/ops.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/gans/ops.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/gans/s3gan_test.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/gans/s3gan_test.py'
+--------------------------------------------------------------------------------
+
+71:23: INFO: Renamed 'tf.train.AdamOptimizer' to 'tf.compat.v1.train.AdamOptimizer'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/gans/ssgan.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/gans/ssgan.py'
+--------------------------------------------------------------------------------
+
+97:9: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+97:59: INFO: Renamed 'tf.AUTO_REUSE' to 'tf.compat.v1.AUTO_REUSE'
+98:50: INFO: Added keywords to args of function 'tf.shape'
+203:29: INFO: Added keywords to args of function 'tf.argmax'
+204:17: INFO: Added keywords to args of function 'tf.reduce_mean'
+208:22: INFO: Added keywords to args of function 'tf.reduce_mean'
+209:10: INFO: Added keywords to args of function 'tf.reduce_sum'
+209:47: INFO: Renamed 'tf.log' to 'tf.math.log'
+210:22: INFO: Added keywords to args of function 'tf.reduce_mean'
+211:10: INFO: Added keywords to args of function 'tf.reduce_sum'
+211:47: INFO: Renamed 'tf.log' to 'tf.math.log'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/gans/ssgan_test.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/gans/ssgan_test.py'
+--------------------------------------------------------------------------------
+
+51:17: INFO: Renamed 'tf.contrib.tpu.RunConfig' to 'tf.compat.v1.estimator.tpu.RunConfig'
+53:19: INFO: Renamed 'tf.contrib.tpu.TPUConfig' to 'tf.compat.v1.estimator.tpu.TPUConfig'
+59:23: INFO: Renamed 'tf.train.AdamOptimizer' to 'tf.compat.v1.train.AdamOptimizer'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/gans/utils.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/gans/utils.py'
+--------------------------------------------------------------------------------
+
+28:9: INFO: Renamed 'tf.gfile.IsDirectory' to 'tf.io.gfile.isdir'
+29:4: INFO: Renamed 'tf.gfile.MakeDirs' to 'tf.io.gfile.makedirs'
+34:7: INFO: Renamed 'tf.gfile.Open' to 'tf.io.gfile.GFile'
+42:28: INFO: Renamed 'tf.image.transpose_image' to 'tf.image.transpose'
+44:6: INFO: Renamed 'tf.image.transpose_image' to 'tf.image.transpose'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/gans/__init__.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/gans/__init__.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/metrics/accuracy.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/metrics/accuracy.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/metrics/eval_task.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/metrics/eval_task.py'
+--------------------------------------------------------------------------------
+
+60:13: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+61:11: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/metrics/fid_score.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/metrics/fid_score.py'
+--------------------------------------------------------------------------------
+
+47:25: INFO: Added keywords to args of function 'tf.convert_to_tensor'
+48:25: INFO: Added keywords to args of function 'tf.convert_to_tensor'
+69:7: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+70:23: INFO: Added keywords to args of function 'tf.convert_to_tensor'
+71:23: INFO: Added keywords to args of function 'tf.convert_to_tensor'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/metrics/fractal_dimension_test.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/metrics/fractal_dimension_test.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/metrics/inception_score.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/metrics/inception_score.py'
+--------------------------------------------------------------------------------
+
+43:20: INFO: Added keywords to args of function 'tf.convert_to_tensor'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/metrics/gilbo.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/metrics/gilbo.py'
+--------------------------------------------------------------------------------
+
+127:27: INFO: Renamed 'tf.report_uninitialized_variables' to 'tf.compat.v1.report_uninitialized_variables'
+133:2: INFO: Renamed 'tf.gfile.MakeDirs' to 'tf.io.gfile.makedirs'
+134:7: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+149:9: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+157:15: INFO: Added keywords to args of function 'tf.reduce_mean'
+161:20: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+161:20: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+163:17: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+163:17: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+165:10: INFO: Renamed 'tf.train.AdamOptimizer' to 'tf.compat.v1.train.AdamOptimizer'
+167:21: ERROR: Using member tf.contrib.framework.get_variables in deprecated module tf.contrib. tf.contrib.framework.get_variables cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+171:24: INFO: Renamed 'tf.report_uninitialized_variables' to 'tf.compat.v1.report_uninitialized_variables'
+173:6: ERROR: Using member tf.contrib.framework.get_variables_by_name in deprecated module tf.contrib. tf.contrib.framework.get_variables_by_name cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+174:2: INFO: Renamed 'tf.variables_initializer' to 'tf.compat.v1.variables_initializer'
+176:10: INFO: Renamed 'tf.train.Saver' to 'tf.compat.v1.train.Saver'
+194:12: WARNING: Changing dataset.make_one_shot_iterator() to tf.compat.v1.data.make_one_shot_iterator(dataset). Please check this transformation.
+
+199:11: WARNING: Changing dataset.make_one_shot_iterator() to tf.compat.v1.data.make_one_shot_iterator(dataset). Please check this transformation.
+
+237:8: INFO: Renamed 'tf.logging.info' to 'tf.compat.v1.logging.info'
+244:4: INFO: Renamed 'tf.logging.info' to 'tf.compat.v1.logging.info'
+252:6: INFO: Renamed 'tf.logging.info' to 'tf.compat.v1.logging.info'
+309:6: INFO: Renamed 'tf.logging.info' to 'tf.compat.v1.logging.info'
+318:9: INFO: Renamed 'tf.gfile.Open' to 'tf.io.gfile.GFile'
+320:4: INFO: Renamed 'tf.logging.info' to 'tf.compat.v1.logging.info'
+354:7: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+355:9: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+358:17: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+359:17: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+360:25: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+361:25: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+442:8: INFO: Renamed 'tf.logging.info' to 'tf.compat.v1.logging.info'
+459:7: INFO: Renamed 'tf.gfile.Open' to 'tf.io.gfile.GFile'
+470:7: INFO: Renamed 'tf.gfile.Open' to 'tf.io.gfile.GFile'
+471:4: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+491:4: INFO: Renamed 'tf.logging.info' to 'tf.compat.v1.logging.info'
+492:9: INFO: Renamed 'tf.gfile.Open' to 'tf.io.gfile.GFile'
+495:4: INFO: Renamed 'tf.logging.info' to 'tf.compat.v1.logging.info'
+515:2: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/metrics/fractal_dimension.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/metrics/fractal_dimension.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/metrics/fid_score_test.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/metrics/fid_score_test.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/metrics/image_similarity.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/metrics/image_similarity.py'
+--------------------------------------------------------------------------------
+
+74:43: INFO: Added keywords to args of function 'tf.size'
+76:26: INFO: Added keywords to args of function 'tf.reduce_all'
+142:9: INFO: Added keywords to args of function 'tf.convert_to_tensor'
+143:10: INFO: Added keywords to args of function 'tf.convert_to_tensor'
+185:16: INFO: Added keywords to args of function 'tf.reduce_min'
+200:12: INFO: Added keywords to args of function 'tf.shape'
+202:8: INFO: Added keywords to args of function 'tf.nn.depthwise_conv2d'
+203:48: INFO: Added keywords to args of function 'tf.shape'
+209:9: INFO: Added keywords to args of function 'tf.reduce_mean'
+210:7: INFO: Added keywords to args of function 'tf.reduce_mean'
+267:7: INFO: Using default_name as name in call to name_scope.
+
+286:16: INFO: Added keywords to args of function 'tf.pad'
+287:14: INFO: Added keywords to args of function 'tf.pad'
+291:11: INFO: Using default_name as name in call to name_scope.
+
+300:25: INFO: Added keywords to args of function 'tf.reduce_any'
+302:19: INFO: Added keywords to args of function 'tf.cond'
+308:14: INFO: Added keywords to args of function 'tf.nn.avg_pool'
+308:14: INFO: Renamed keyword argument for tf.nn.avg_pool from value to input
+308:14: INFO: Renamed 'tf.nn.avg_pool' to 'tf.nn.avg_pool2d'
+330:14: INFO: Added keywords to args of function 'tf.reduce_prod'
+332:14: INFO: Added keywords to args of function 'tf.reduce_mean'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/metrics/jacobian_conditioning.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/metrics/jacobian_conditioning.py'
+--------------------------------------------------------------------------------
+
+110:35: INFO: Added keywords to args of function 'tf.gradients'
+114:14: INFO: Added keywords to args of function 'tf.while_loop'
+117:10: INFO: Added keywords to args of function 'tf.transpose'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/metrics/jacobian_conditioning_test.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/metrics/jacobian_conditioning_test.py'
+--------------------------------------------------------------------------------
+
+46:11: INFO: Added keywords to args of function 'tf.gradients'
+55:8: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+59:9: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+68:8: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+69:9: ERROR: Using member tf.contrib.layers.fully_connected in deprecated module tf.contrib. tf.contrib.layers.fully_connected cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+70:9: ERROR: Using member tf.contrib.layers.fully_connected in deprecated module tf.contrib. tf.contrib.layers.fully_connected cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+71:8: ERROR: Using member tf.contrib.layers.fully_connected in deprecated module tf.contrib. tf.contrib.layers.fully_connected cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+76:9: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+77:15: INFO: Renamed 'tf.global_variables_initializer' to 'tf.compat.v1.global_variables_initializer'
+82:8: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+83:9: ERROR: Using member tf.contrib.layers.fully_connected in deprecated module tf.contrib. tf.contrib.layers.fully_connected cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+84:9: ERROR: Using member tf.contrib.layers.fully_connected in deprecated module tf.contrib. tf.contrib.layers.fully_connected cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+85:8: ERROR: Using member tf.contrib.layers.fully_connected in deprecated module tf.contrib. tf.contrib.layers.fully_connected cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+88:9: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+89:15: INFO: Renamed 'tf.global_variables_initializer' to 'tf.compat.v1.global_variables_initializer'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/metrics/kid_score.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/metrics/kid_score.py'
+--------------------------------------------------------------------------------
+
+137:13: INFO: Added keywords to args of function 'tf.reduce_mean'
+137:37: INFO: Added keywords to args of function 'tf.reduce_sum'
+137:59: INFO: Renamed 'tf.trace' to 'tf.linalg.trace'
+138:25: INFO: Added keywords to args of function 'tf.reduce_sum'
+138:47: INFO: Renamed 'tf.trace' to 'tf.linalg.trace'
+145:13: INFO: Added keywords to args of function 'tf.reduce_mean'
+146:14: INFO: Added keywords to args of function 'tf.nn.moments'
+149:11: INFO: Added keywords to args of function 'tf.reduce_mean'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/metrics/ms_ssim_score.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/metrics/ms_ssim_score.py'
+--------------------------------------------------------------------------------
+
+53:24: INFO: Renamed 'tf.train.shuffle_batch' to 'tf.compat.v1.train.shuffle_batch'
+54:9: INFO: Added keywords to args of function 'tf.convert_to_tensor'
+65:9: INFO: Renamed 'tf.train.MonitoredTrainingSession' to 'tf.compat.v1.train.MonitoredTrainingSession'
+96:10: INFO: Added keywords to args of function 'tf.reduce_sum'
+98:10: INFO: Renamed 'tf.div' to 'tf.compat.v1.div'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/metrics/ms_ssim_score_test.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/metrics/ms_ssim_score_test.py'
+--------------------------------------------------------------------------------
+
+37:11: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+38:17: INFO: Renamed 'tf.global_variables_initializer' to 'tf.compat.v1.global_variables_initializer'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/metrics/prd_score_test.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/metrics/prd_score_test.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/metrics/prd_score.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/metrics/prd_score.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/metrics/__init__.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/metrics/__init__.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/architectures/arch_ops_test.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/architectures/arch_ops_test.py'
+--------------------------------------------------------------------------------
+
+39:16: INFO: Renamed 'tf.layers.batch_normalization' to 'tf.compat.v1.layers.batch_normalization'
+40:19: ERROR: Using member tf.contrib.layers.batch_norm in deprecated module tf.contrib. tf.contrib.layers.batch_norm cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+43:17: INFO: Renamed 'tf.global_variables_initializer' to 'tf.compat.v1.global_variables_initializer'
+46:8: INFO: Renamed 'tf.logging.info' to 'tf.compat.v1.logging.info'
+47:8: INFO: Renamed 'tf.logging.info' to 'tf.compat.v1.logging.info'
+48:8: INFO: Renamed 'tf.logging.info' to 'tf.compat.v1.logging.info'
+65:16: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+66:20: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+69:49: INFO: Renamed 'tf.global_variables' to 'tf.compat.v1.global_variables'
+70:6: INFO: Renamed 'tf.logging.error' to 'tf.compat.v1.logging.error'
+75:17: INFO: Renamed 'tf.global_variables_initializer' to 'tf.compat.v1.global_variables_initializer'
+93:16: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+94:20: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+97:49: INFO: Renamed 'tf.global_variables' to 'tf.compat.v1.global_variables'
+98:6: INFO: Renamed 'tf.logging.error' to 'tf.compat.v1.logging.error'
+104:17: INFO: Renamed 'tf.global_variables_initializer' to 'tf.compat.v1.global_variables_initializer'
+106:17: INFO: Renamed 'tf.assign' to 'tf.compat.v1.assign'
+123:17: INFO: Renamed 'tf.assign' to 'tf.compat.v1.assign'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/architectures/dcgan.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/architectures/dcgan.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/architectures/resnet30.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/architectures/resnet30.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/architectures/infogan.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/architectures/infogan.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/architectures/arch_ops_tpu_test.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/architectures/arch_ops_tpu_test.py'
+--------------------------------------------------------------------------------
+
+64:6: INFO: Renamed 'tf.logging.info' to 'tf.compat.v1.logging.info'
+69:16: INFO: Renamed 'tf.layers.batch_normalization' to 'tf.compat.v1.layers.batch_normalization'
+70:19: ERROR: Using member tf.contrib.layers.batch_norm in deprecated module tf.contrib. tf.contrib.layers.batch_norm cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+72:6: INFO: Renamed 'tf.logging.info' to 'tf.compat.v1.logging.info'
+77:39: INFO: Renamed 'tf.contrib.tpu.batch_parallel' to 'tf.compat.v1.tpu.batch_parallel'
+81:17: INFO: Renamed 'tf.contrib.tpu.initialize_system' to 'tf.compat.v1.tpu.initialize_system'
+82:17: INFO: Renamed 'tf.global_variables_initializer' to 'tf.compat.v1.global_variables_initializer'
+94:16: INFO: Renamed 'tf.layers.batch_normalization' to 'tf.compat.v1.layers.batch_normalization'
+95:19: ERROR: Using member tf.contrib.layers.batch_norm in deprecated module tf.contrib. tf.contrib.layers.batch_norm cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+100:28: INFO: Renamed 'tf.contrib.tpu.batch_parallel' to 'tf.compat.v1.tpu.batch_parallel'
+104:17: INFO: Renamed 'tf.contrib.tpu.initialize_system' to 'tf.compat.v1.tpu.initialize_system'
+105:17: INFO: Renamed 'tf.global_variables_initializer' to 'tf.compat.v1.global_variables_initializer'
+122:33: INFO: Renamed 'tf.contrib.tpu.batch_parallel' to 'tf.compat.v1.tpu.batch_parallel'
+126:17: INFO: Renamed 'tf.contrib.tpu.initialize_system' to 'tf.compat.v1.tpu.initialize_system'
+127:17: INFO: Renamed 'tf.global_variables_initializer' to 'tf.compat.v1.global_variables_initializer'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/architectures/resnet5.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/architectures/resnet5.py'
+--------------------------------------------------------------------------------
+
+141:17: INFO: Added keywords to args of function 'tf.reduce_mean'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/architectures/architectures_test.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/architectures/architectures_test.py'
+--------------------------------------------------------------------------------
+
+52:17: INFO: Renamed 'tf.global_variables_initializer' to 'tf.compat.v1.global_variables_initializer'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/architectures/abstract_arch.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/architectures/abstract_arch.py'
+--------------------------------------------------------------------------------
+
+45:27: INFO: Renamed 'tf.trainable_variables' to 'tf.compat.v1.trainable_variables'
+71:46: INFO: Renamed 'tf.AUTO_REUSE' to 'tf.compat.v1.AUTO_REUSE'
+72:9: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+116:46: INFO: Renamed 'tf.AUTO_REUSE' to 'tf.compat.v1.AUTO_REUSE'
+117:9: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/architectures/arch_ops.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/architectures/arch_ops.py'
+--------------------------------------------------------------------------------
+
+58:11: INFO: tf.initializers.random_normal requires manual check. Initializers no longer have the dtype argument in the constructor or partition_info argument in the __call__ method.
+The calls have been converted to compat.v1 for safety (even though they may already have been correct).
+58:11: INFO: Renamed 'tf.initializers.random_normal' to 'tf.compat.v1.initializers.random_normal'
+60:11: INFO: tf.initializers.truncated_normal requires manual check. Initializers no longer have the dtype argument in the constructor or partition_info argument in the __call__ method.
+The calls have been converted to compat.v1 for safety (even though they may already have been correct).
+60:11: INFO: Renamed 'tf.initializers.truncated_normal' to 'tf.compat.v1.initializers.truncated_normal'
+62:11: INFO: tf.initializers.orthogonal requires manual check. Initializers no longer have the dtype argument in the constructor or partition_info argument in the __call__ method.
+The calls have been converted to compat.v1 for safety (even though they may already have been correct).
+62:11: INFO: Renamed 'tf.initializers.orthogonal' to 'tf.compat.v1.initializers.orthogonal'
+83:6: INFO: Renamed 'tf.GraphKeys' to 'tf.compat.v1.GraphKeys'
+84:6: INFO: Renamed 'tf.GraphKeys' to 'tf.compat.v1.GraphKeys'
+84:36: INFO: Renamed 'tf.GraphKeys' to 'tf.compat.v1.GraphKeys'
+88:16: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+88:16: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+91:18: INFO: tf.zeros_initializer requires manual check. Initializers no longer have the dtype argument in the constructor or partition_info argument in the __call__ method.
+The calls have been converted to compat.v1 for safety (even though they may already have been correct).
+91:18: INFO: Renamed 'tf.zeros_initializer' to 'tf.compat.v1.zeros_initializer'
+95:20: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+95:20: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+98:18: INFO: tf.ones_initializer requires manual check. Initializers no longer have the dtype argument in the constructor or partition_info argument in the __call__ method.
+The calls have been converted to compat.v1 for safety (even though they may already have been correct).
+98:18: INFO: Renamed 'tf.ones_initializer' to 'tf.compat.v1.ones_initializer'
+115:4: INFO: Renamed 'tf.add_to_collection' to 'tf.compat.v1.add_to_collection'
+115:25: INFO: Renamed 'tf.GraphKeys' to 'tf.compat.v1.GraphKeys'
+116:4: INFO: Renamed 'tf.add_to_collection' to 'tf.compat.v1.add_to_collection'
+116:25: INFO: Renamed 'tf.GraphKeys' to 'tf.compat.v1.GraphKeys'
+139:6: INFO: Renamed 'tf.GraphKeys' to 'tf.compat.v1.GraphKeys'
+139:36: INFO: Renamed 'tf.GraphKeys' to 'tf.compat.v1.GraphKeys'
+141:7: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+145:16: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+145:16: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+148:20: INFO: tf.zeros_initializer requires manual check. Initializers no longer have the dtype argument in the constructor or partition_info argument in the __call__ method.
+The calls have been converted to compat.v1 for safety (even though they may already have been correct).
+148:20: INFO: Renamed 'tf.zeros_initializer' to 'tf.compat.v1.zeros_initializer'
+151:20: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+151:20: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+154:20: INFO: tf.zeros_initializer requires manual check. Initializers no longer have the dtype argument in the constructor or partition_info argument in the __call__ method.
+The calls have been converted to compat.v1 for safety (even though they may already have been correct).
+154:20: INFO: Renamed 'tf.zeros_initializer' to 'tf.compat.v1.zeros_initializer'
+157:19: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+157:19: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+160:20: INFO: tf.initializers.constant requires manual check. Initializers no longer have the dtype argument in the constructor or partition_info argument in the __call__ method.
+The calls have been converted to compat.v1 for safety (even though they may already have been correct).
+160:20: INFO: Renamed 'tf.initializers.constant' to 'tf.compat.v1.initializers.constant'
+163:19: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+163:19: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+167:20: INFO: tf.zeros_initializer requires manual check. Initializers no longer have the dtype argument in the constructor or partition_info argument in the __call__ method.
+The calls have been converted to compat.v1 for safety (even though they may already have been correct).
+167:20: INFO: Renamed 'tf.zeros_initializer' to 'tf.compat.v1.zeros_initializer'
+182:10: INFO: Renamed 'tf.assign_add' to 'tf.compat.v1.assign_add'
+183:10: INFO: Renamed 'tf.assign_add' to 'tf.compat.v1.assign_add'
+184:10: INFO: Renamed 'tf.assign_add' to 'tf.compat.v1.assign_add'
+186:10: INFO: Added keywords to args of function 'tf.cond'
+265:11: INFO: Added keywords to args of function 'tf.convert_to_tensor'
+294:38: INFO: Renamed keyword argument for tf.nn.sufficient_statistics from keep_dims to keepdims
+346:7: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+351:19: INFO: Renamed 'tf.GraphKeys' to 'tf.compat.v1.GraphKeys'
+352:19: INFO: Renamed 'tf.GraphKeys' to 'tf.compat.v1.GraphKeys'
+354:14: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+354:14: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+358:22: INFO: tf.ones_initializer requires manual check. Initializers no longer have the dtype argument in the constructor or partition_info argument in the __call__ method.
+The calls have been converted to compat.v1 for safety (even though they may already have been correct).
+358:22: INFO: Renamed 'tf.ones_initializer' to 'tf.compat.v1.ones_initializer'
+361:13: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+361:13: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+365:22: INFO: tf.zeros_initializer requires manual check. Initializers no longer have the dtype argument in the constructor or partition_info argument in the __call__ method.
+The calls have been converted to compat.v1 for safety (even though they may already have been correct).
+365:22: INFO: Renamed 'tf.zeros_initializer' to 'tf.compat.v1.zeros_initializer'
+402:7: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+406:9: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+431:7: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+434:9: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+449:9: WARNING: tf.contrib.layers.layer_norm requires manual check. (Manual edit required) `tf.contrib.layers.layer_norm` has been deprecated, and its implementation has been integrated with `tf.keras.layers.LayerNormalization` in TensorFlow 2.0. Note that, the default value of `epsilon` is changed to `1e-3` in the new API from `1e-12`, and this may introduce numerical differences. Please check the new API and use that instead.
+449:9: ERROR: Using member tf.contrib.layers.layer_norm in deprecated module tf.contrib. tf.contrib.layers.layer_norm cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+492:10: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+492:10: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+496:18: INFO: tf.random_normal_initializer requires manual check. Initializers no longer have the dtype argument in the constructor or partition_info argument in the __call__ method.
+The calls have been converted to compat.v1 for safety (even though they may already have been correct).
+496:18: INFO: Renamed 'tf.random_normal_initializer' to 'tf.compat.v1.random_normal_initializer'
+508:20: INFO: Added keywords to args of function 'tf.transpose'
+516:32: INFO: Renamed 'tf.assign' to 'tf.compat.v1.assign'
+525:37: INFO: Added keywords to args of function 'tf.transpose'
+542:7: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+543:13: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+543:13: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+551:13: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+551:13: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+554:22: INFO: tf.constant_initializer requires manual check. Initializers no longer have the dtype argument in the constructor or partition_info argument in the __call__ method.
+The calls have been converted to compat.v1 for safety (even though they may already have been correct).
+554:22: INFO: Renamed 'tf.constant_initializer' to 'tf.compat.v1.constant_initializer'
+562:7: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+563:8: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+563:8: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+568:14: INFO: Added keywords to args of function 'tf.nn.conv2d'
+568:14: INFO: Renamed keyword argument for tf.nn.conv2d from filter to filters
+570:13: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+570:13: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+571:44: INFO: tf.constant_initializer requires manual check. Initializers no longer have the dtype argument in the constructor or partition_info argument in the __call__ method.
+The calls have been converted to compat.v1 for safety (even though they may already have been correct).
+571:44: INFO: Renamed 'tf.constant_initializer' to 'tf.compat.v1.constant_initializer'
+582:7: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+583:8: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+583:8: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+590:11: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+590:11: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+591:48: INFO: tf.constant_initializer requires manual check. Initializers no longer have the dtype argument in the constructor or partition_info argument in the __call__ method.
+The calls have been converted to compat.v1 for safety (even though they may already have been correct).
+591:48: INFO: Renamed 'tf.constant_initializer' to 'tf.compat.v1.constant_initializer'
+592:52: INFO: Added keywords to args of function 'tf.shape'
+603:35: INFO: tf.truncated_normal_initializer requires manual check. Initializers no longer have the dtype argument in the constructor or partition_info argument in the __call__ method.
+The calls have been converted to compat.v1 for safety (even though they may already have been correct).
+603:35: INFO: Renamed 'tf.truncated_normal_initializer' to 'tf.compat.v1.truncated_normal_initializer'
+606:7: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+608:10: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+608:10: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+612:23: INFO: Added keywords to args of function 'tf.nn.moments'
+614:10: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+614:10: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+616:10: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+616:10: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+623:10: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+623:10: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+624:10: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+624:10: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+625:10: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+625:10: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+626:6: INFO: Renamed 'tf.assert_variables_initialized' to 'tf.compat.v1.assert_variables_initialized'
+628:27: INFO: Added keywords to args of function 'tf.reduce_sum'
+639:35: INFO: tf.truncated_normal_initializer requires manual check. Initializers no longer have the dtype argument in the constructor or partition_info argument in the __call__ method.
+The calls have been converted to compat.v1 for safety (even though they may already have been correct).
+639:35: INFO: Renamed 'tf.truncated_normal_initializer' to 'tf.compat.v1.truncated_normal_initializer'
+641:7: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+643:10: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+643:10: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+647:15: INFO: Added keywords to args of function 'tf.nn.conv2d'
+647:15: INFO: Renamed keyword argument for tf.nn.conv2d from filter to filters
+649:23: INFO: Added keywords to args of function 'tf.nn.moments'
+651:10: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+651:10: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+653:10: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+653:10: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+659:10: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+659:10: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+660:10: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+660:10: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+661:10: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+661:10: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+662:6: INFO: Renamed 'tf.assert_variables_initialized' to 'tf.compat.v1.assert_variables_initialized'
+666:10: INFO: Added keywords to args of function 'tf.nn.conv2d'
+666:10: INFO: Renamed keyword argument for tf.nn.conv2d from filter to filters
+675:37: INFO: tf.truncated_normal_initializer requires manual check. Initializers no longer have the dtype argument in the constructor or partition_info argument in the __call__ method.
+The calls have been converted to compat.v1 for safety (even though they may already have been correct).
+675:37: INFO: Renamed 'tf.truncated_normal_initializer' to 'tf.compat.v1.truncated_normal_initializer'
+679:7: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+681:10: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+681:10: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+687:23: INFO: Added keywords to args of function 'tf.nn.moments'
+689:10: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+689:10: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+691:10: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+691:10: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+697:10: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+697:10: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+698:10: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+698:10: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+699:10: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+699:10: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+700:6: INFO: Renamed 'tf.assert_variables_initialized' to 'tf.compat.v1.assert_variables_initialized'
+728:7: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+741:10: INFO: Renamed 'tf.layers.max_pooling2d' to 'tf.compat.v1.layers.max_pooling2d'
+750:8: INFO: Renamed 'tf.layers.max_pooling2d' to 'tf.compat.v1.layers.max_pooling2d'
+755:12: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+755:12: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+755:53: INFO: tf.zeros_initializer requires manual check. Initializers no longer have the dtype argument in the constructor or partition_info argument in the __call__ method.
+The calls have been converted to compat.v1 for safety (even though they may already have been correct).
+755:53: INFO: Renamed 'tf.zeros_initializer' to 'tf.compat.v1.zeros_initializer'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/architectures/resnet_biggan.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/architectures/resnet_biggan.py'
+--------------------------------------------------------------------------------
+
+118:9: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+405:8: INFO: Added keywords to args of function 'tf.math.reduce_sum'
+411:11: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+415:17: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+415:17: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+417:24: INFO: tf.initializers.glorot_normal requires manual check. Initializers no longer have the dtype argument in the constructor or partition_info argument in the __call__ method.
+The calls have been converted to compat.v1 for safety (even though they may already have been correct).
+417:24: INFO: Renamed 'tf.initializers.glorot_normal' to 'tf.compat.v1.initializers.glorot_normal'
+423:21: INFO: Added keywords to args of function 'tf.reduce_sum'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/architectures/resnet_biggan_deep.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/architectures/resnet_biggan_deep.py'
+--------------------------------------------------------------------------------
+
+96:9: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+108:19: INFO: Added keywords to args of function 'tf.nn.pool'
+145:9: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+148:11: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+153:11: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+160:11: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+165:11: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+169:20: INFO: Added keywords to args of function 'tf.nn.pool'
+413:8: INFO: Added keywords to args of function 'tf.math.reduce_sum'
+419:11: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+423:17: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+423:17: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+425:24: INFO: tf.initializers.glorot_normal requires manual check. Initializers no longer have the dtype argument in the constructor or partition_info argument in the __call__ method.
+The calls have been converted to compat.v1 for safety (even though they may already have been correct).
+425:24: INFO: Renamed 'tf.initializers.glorot_normal' to 'tf.compat.v1.initializers.glorot_normal'
+431:21: INFO: Added keywords to args of function 'tf.reduce_sum'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/architectures/resnet_cifar.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/architectures/resnet_cifar.py'
+--------------------------------------------------------------------------------
+
+156:8: INFO: Added keywords to args of function 'tf.reduce_mean'
+165:19: INFO: Added keywords to args of function 'tf.reduce_sum'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/architectures/resnet_biggan_deep_test.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/architectures/resnet_biggan_deep_test.py'
+--------------------------------------------------------------------------------
+
+45:15: INFO: Renamed 'tf.trainable_variables' to 'tf.compat.v1.trainable_variables'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/architectures/resnet_biggan_test.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/architectures/resnet_biggan_test.py'
+--------------------------------------------------------------------------------
+
+51:12: INFO: Renamed 'tf.get_default_graph' to 'tf.compat.v1.get_default_graph'
+104:15: INFO: Renamed 'tf.trainable_variables' to 'tf.compat.v1.trainable_variables'
+168:15: INFO: Renamed 'tf.trainable_variables' to 'tf.compat.v1.trainable_variables'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/architectures/resnet_init_test.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/architectures/resnet_init_test.py'
+--------------------------------------------------------------------------------
+
+50:17: INFO: Renamed 'tf.trainable_variables' to 'tf.compat.v1.trainable_variables'
+70:17: INFO: Renamed 'tf.trainable_variables' to 'tf.compat.v1.trainable_variables'
+90:17: INFO: Renamed 'tf.trainable_variables' to 'tf.compat.v1.trainable_variables'
+110:17: INFO: Renamed 'tf.trainable_variables' to 'tf.compat.v1.trainable_variables'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/architectures/resnet_norm_test.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/architectures/resnet_norm_test.py'
+--------------------------------------------------------------------------------
+
+65:35: INFO: Renamed 'tf.trainable_variables' to 'tf.compat.v1.trainable_variables'
+108:35: INFO: Renamed 'tf.trainable_variables' to 'tf.compat.v1.trainable_variables'
+164:35: INFO: Renamed 'tf.trainable_variables' to 'tf.compat.v1.trainable_variables'
+222:35: INFO: Renamed 'tf.trainable_variables' to 'tf.compat.v1.trainable_variables'
+308:35: INFO: Renamed 'tf.trainable_variables' to 'tf.compat.v1.trainable_variables'
+363:35: INFO: Renamed 'tf.global_variables' to 'tf.compat.v1.global_variables'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/architectures/resnet_stl.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/architectures/resnet_stl.py'
+--------------------------------------------------------------------------------
+
+104:17: INFO: Added keywords to args of function 'tf.reduce_mean'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/architectures/__init__.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/architectures/__init__.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/architectures/sndcgan.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/architectures/sndcgan.py'
+--------------------------------------------------------------------------------
+
+78:10: INFO: Renamed 'tf.div' to 'tf.compat.v1.div'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/content/drive/My Drive/drive/gan/gan_git-01/gan_git/compare_gan/architectures/resnet_ops.py'
+ outputting to '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/architectures/resnet_ops.py'
+--------------------------------------------------------------------------------
+
+48:7: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+48:7: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+132:16: INFO: Added keywords to args of function 'tf.nn.pool'
+153:9: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+--------------------------------------------------------------------------------
