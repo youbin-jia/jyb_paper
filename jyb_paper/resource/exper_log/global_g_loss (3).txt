@@ -1,0 +1,1112 @@
+['/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/gans', '/env/python', '/usr/lib/python36.zip', '/usr/lib/python3.6', '/usr/lib/python3.6/lib-dynload', '/usr/local/lib/python3.6/dist-packages', '/usr/lib/python3/dist-packages', '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/', '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/']
+2020-04-09 07:43:59.490314: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow_gan/python/estimator/tpu_gan_estimator.py:42: The name tf.estimator.tpu.TPUEstimator is deprecated. Please use tf.compat.v1.estimator.tpu.TPUEstimator instead.
+
+['/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/gans', '/env/python', '/usr/lib/python36.zip', '/usr/lib/python3.6', '/usr/lib/python3.6/lib-dynload', '/usr/local/lib/python3.6/dist-packages', '/usr/lib/python3/dist-packages', '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/', '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/', '/usr/local/lib/python3.6/dist-packages/IPython/extensions', '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/tpu/', '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/metrics/', '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/architectures/', '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/', '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/']
+['/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/gans', '/env/python', '/usr/lib/python36.zip', '/usr/lib/python3.6', '/usr/lib/python3.6/lib-dynload', '/usr/local/lib/python3.6/dist-packages', '/usr/lib/python3/dist-packages', '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/', '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/', '/usr/local/lib/python3.6/dist-packages/IPython/extensions', '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/tpu/', '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/metrics/', '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/architectures/', '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/', '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/', '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/architectures/', '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/', '/content/drive/My Drive/drive/gan/gan_git-02/gan_git/']
+Running tests under Python 3.6.9: /usr/bin/python3
+[ RUN      ] S3GANTest.testSingleTrainingStepArchitectures
+WARNING:tensorflow:From /content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/test_utils.py:59: flatten (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Flatten instead.
+W0409 07:44:13.681717 140687403906944 deprecation.py:323] From /content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/test_utils.py:59: flatten (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Flatten instead.
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow/python/layers/core.py:332: Layer.apply (from tensorflow.python.keras.engine.base_layer_v1) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+W0409 07:44:13.687365 140687403906944 deprecation.py:323] From /usr/local/lib/python3.6/dist-packages/tensorflow/python/layers/core.py:332: Layer.apply (from tensorflow.python.keras.engine.base_layer_v1) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+-----------------------testSingleTrainingStepArchitectures,s
+I0409 07:44:13.695564 140687403906944 datasets.py:104] ImageDatasetV2(name=RotorWinding_128, tfds_name=RotorWinding2020, resolution=128, colors=3, num_classes=2, eval_test_samples=1742, seed=547)
+-----------------------tf.estimator.TrainSpec
+-----------------------tf.estimator.EvalSpec
+-----------------------gan.as_estimator
+--------------------------------------------modular_gan.py/as_estimator,s
+--------------------------------------------modular_gan.py/as_estimator,e
+INFO:tensorflow:Using config: {'_model_dir': '/tmp/absl_testing/695705', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': gpu_options {
+  per_process_gpu_memory_fraction: 0.9
+}
+allow_soft_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_session_creation_timeout_secs': 7200, '_service': None, '_cluster_spec': ClusterSpec({}), '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+I0409 07:44:13.698175 140687403906944 estimator.py:191] Using config: {'_model_dir': '/tmp/absl_testing/695705', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': gpu_options {
+  per_process_gpu_memory_fraction: 0.9
+}
+allow_soft_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_session_creation_timeout_secs': 7200, '_service': None, '_cluster_spec': ClusterSpec({}), '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+-----------------------tf.estimator.train_and_evaluate
+INFO:tensorflow:Not using Distribute Coordinator.
+I0409 07:44:13.698739 140687403906944 estimator_training.py:186] Not using Distribute Coordinator.
+INFO:tensorflow:Running training and evaluation locally (non-distributed).
+I0409 07:44:13.699203 140687403906944 training.py:612] Running training and evaluation locally (non-distributed).
+INFO:tensorflow:Start train and evaluate loop. The evaluate will happen after every checkpoint. Checkpoint frequency is determined based on RunConfig arguments: save_checkpoints_steps None or save_checkpoints_secs 600.
+I0409 07:44:13.699553 140687403906944 training.py:700] Start train and evaluate loop. The evaluate will happen after every checkpoint. Checkpoint frequency is determined based on RunConfig arguments: save_checkpoints_steps None or save_checkpoints_secs 600.
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow/python/ops/resource_variable_ops.py:1666: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+W0409 07:44:13.704701 140687403906944 deprecation.py:506] From /usr/local/lib/python3.6/dist-packages/tensorflow/python/ops/resource_variable_ops.py:1666: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow/python/training/training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+W0409 07:44:13.705308 140687403906944 deprecation.py:323] From /usr/local/lib/python3.6/dist-packages/tensorflow/python/training/training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+2020-04-09 07:44:13.730647: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2020-04-09 07:44:13.750139: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-04-09 07:44:13.750977: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1561] Found device 0 with properties: 
+pciBusID: 0000:00:04.0 name: Tesla P100-PCIE-16GB computeCapability: 6.0
+coreClock: 1.3285GHz coreCount: 56 deviceMemorySize: 15.90GiB deviceMemoryBandwidth: 681.88GiB/s
+2020-04-09 07:44:13.751024: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2020-04-09 07:44:13.751091: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2020-04-09 07:44:13.751140: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2020-04-09 07:44:13.751188: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2020-04-09 07:44:13.751232: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2020-04-09 07:44:13.752416: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2020-04-09 07:44:13.752513: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-04-09 07:44:13.752684: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-04-09 07:44:13.753565: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-04-09 07:44:13.754327: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1703] Adding visible gpu devices: 0
+--------------------------------------------modular_gan.py/input_fn,s/e
+--------------------------------------------datasets.py/input_fn,s/e
+--------------------------------------------datasets.py/train_input_fn,s
+W0409 07:44:13.763469 140687403906944 datasets.py:170] No TPUContext, using unmodified dataset seed 547.
+I0409 07:44:13.763667 140687403906944 datasets.py:304] train_input_fn(): params={'use_tpu': False, 'train_batch_size': 8, 'batch_size': 8} seed=547
+--------------------------------------------datasets.py/_load_dataset,s
+!!!!!!!!!!!!!!!!!!!!!!----load_local_datasets,  _local_train_ds_dir= /content/drive/My Drive/drive/gan/train
+-----------------------------------------get_local_datasets,s
+-----------------------------------------get_local_datasets,e
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow/python/ops/image_ops_impl.py:2827: sample_distorted_bounding_box (from tensorflow.python.ops.image_ops_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+`seed2` arg is deprecated.Use sample_distorted_bounding_box_v2 instead.
+W0409 07:44:16.944100 140687403906944 deprecation.py:323] From /usr/local/lib/python3.6/dist-packages/tensorflow/python/ops/image_ops_impl.py:2827: sample_distorted_bounding_box (from tensorflow.python.ops.image_ops_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+`seed2` arg is deprecated.Use sample_distorted_bounding_box_v2 instead.
+--------------------------------------------modular_gan.py/_preprocess_fn,s
+I0409 07:44:18.784001 140687403906944 api.py:587] _preprocess_fn(): images=Tensor("args_0:0", shape=(128, 128, 3), dtype=float32), labels=Tensor("args_1:0", shape=(), dtype=int32), seed=547
+--------------------------------------------modular_gan.py/_preprocess_fn,e
+WARNING:tensorflow:From /content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/tpu/tpu_random.py:65: enumerate_dataset (from tensorflow.python.data.experimental.ops.enumerate_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Dataset.enumerate()
+W0409 07:44:22.008411 140687403906944 deprecation.py:323] From /content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/tpu/tpu_random.py:65: enumerate_dataset (from tensorflow.python.data.experimental.ops.enumerate_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Dataset.enumerate()
+I0409 07:44:22.160787 140687403906944 api.py:587] Passing random offset: Tensor("Cast:0", shape=(), dtype=int32) with data ({'images': <tf.Tensor 'args_1:0' shape=(128, 128, 3) dtype=float32>, 'z': <tf.Tensor 'args_3:0' shape=(120,) dtype=float32>, 'sampled_labels': <tf.Tensor 'args_2:0' shape=() dtype=int32>}, <tf.Tensor 'args_4:0' shape=() dtype=int32>).
+--------------------------------------------datasets.py/train_input_fn,e
+INFO:tensorflow:Calling model_fn.
+I0409 07:44:22.191896 140687403906944 estimator.py:1169] Calling model_fn.
+--------------------------------------------modular_gan.py/model_fn,s
+I0409 07:44:22.192112 140687403906944 modular_gan.py:569] model_fn(): features={'images': <tf.Tensor 'IteratorGetNext:1' shape=(8, 128, 128, 3) dtype=float32>, 'z': <tf.Tensor 'IteratorGetNext:3' shape=(8, 120) dtype=float32>, 'sampled_labels': <tf.Tensor 'IteratorGetNext:2' shape=(8,) dtype=int32>, '_RANDOM_OFFSET': <tf.Tensor 'IteratorGetNext:0' shape=(8,) dtype=int32>}, labels=Tensor("IteratorGetNext:4", shape=(8,), dtype=int32),mode=train, params={'use_tpu': False, 'train_batch_size': 8, 'batch_size': 8}
+#Clean old summaries from previous calls to model_fn().
+# Get features and labels for each sub-step.
+--------------------------------------------modular_gan.py/_split_inputs_and_generate_samples,s
+I0409 07:44:22.202239 140687403906944 resnet_biggan.py:236] [Generator] inputs are z=(8, 120), y=(8, 2)
+I0409 07:44:22.216635 140687403906944 resnet_biggan.py:262] [Generator] z0=(8, 20), z_per_block=['(8, 20)', '(8, 20)', '(8, 20)', '(8, 20)', '(8, 20)'], y_per_block=['(8, 148)', '(8, 148)', '(8, 148)', '(8, 148)', '(8, 148)']
+I0409 07:44:22.292293 140687403906944 resnet_biggan.py:150] [Block] (8, 4, 4, 1536) (z=(8, 20), y=(8, 148)) -> (8, 8, 8, 1536)
+I0409 07:44:22.350161 140687403906944 resnet_biggan.py:150] [Block] (8, 8, 8, 1536) (z=(8, 20), y=(8, 148)) -> (8, 16, 16, 768)
+I0409 07:44:22.403293 140687403906944 resnet_biggan.py:150] [Block] (8, 16, 16, 768) (z=(8, 20), y=(8, 148)) -> (8, 32, 32, 384)
+I0409 07:44:22.457026 140687403906944 resnet_biggan.py:150] [Block] (8, 32, 32, 384) (z=(8, 20), y=(8, 148)) -> (8, 64, 64, 192)
+I0409 07:44:22.457207 140687403906944 resnet_biggan.py:289] [Generator] Applying non-local block to (8, 64, 64, 192)
+WARNING:tensorflow:From /content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/architectures/arch_ops.py:741: max_pooling2d (from tensorflow.python.layers.pooling) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.MaxPooling2D instead.
+W0409 07:44:22.474964 140687403906944 deprecation.py:323] From /content/drive/My Drive/drive/gan/gan_git-02/gan_git/compare_gan/architectures/arch_ops.py:741: max_pooling2d (from tensorflow.python.layers.pooling) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.MaxPooling2D instead.
+I0409 07:44:22.562303 140687403906944 resnet_biggan.py:150] [Block] (8, 64, 64, 192) (z=(8, 20), y=(8, 148)) -> (8, 128, 128, 96)
+I0409 07:44:22.562538 140687403906944 resnet_biggan.py:294] [Generator] before final processing: (8, 128, 128, 96)
+I0409 07:44:22.608314 140687403906944 resnet_biggan.py:300] [Generator] after final processing: (8, 128, 128, 3)
+--------------------------------------------modular_gan.py/_split_inputs_and_generate_samples,e
+##################################################  mode == tf.estimator.ModeKeys.TRAIN ########################
+#simpeler train_disc_fn
+#simpeler train_gen_fn
+#confirm train_gen_fn
+# Train D.(train d_steps)
+I0409 07:44:22.616929 140687403906944 tpu_random.py:86] Got global random offset: Tensor("disc_step_1/strided_slice:0", shape=(), dtype=int32)
+---------------------------------------------------s3gan.py/create_loss,s
+W0409 07:44:22.620750 140687403906944 s3gan.py:237] Computing fake images for every sub step separately.
+I0409 07:44:22.620988 140687403906944 resnet_biggan.py:236] [Generator] inputs are z=(8, 120), y=(8, 2)
+I0409 07:44:22.628550 140687403906944 resnet_biggan.py:262] [Generator] z0=(8, 20), z_per_block=['(8, 20)', '(8, 20)', '(8, 20)', '(8, 20)', '(8, 20)'], y_per_block=['(8, 148)', '(8, 148)', '(8, 148)', '(8, 148)', '(8, 148)']
+I0409 07:44:22.656034 140687403906944 resnet_biggan.py:150] [Block] (8, 4, 4, 1536) (z=(8, 20), y=(8, 148)) -> (8, 8, 8, 1536)
+I0409 07:44:22.680833 140687403906944 resnet_biggan.py:150] [Block] (8, 8, 8, 1536) (z=(8, 20), y=(8, 148)) -> (8, 16, 16, 768)
+I0409 07:44:22.706891 140687403906944 resnet_biggan.py:150] [Block] (8, 16, 16, 768) (z=(8, 20), y=(8, 148)) -> (8, 32, 32, 384)
+I0409 07:44:22.728859 140687403906944 resnet_biggan.py:150] [Block] (8, 32, 32, 384) (z=(8, 20), y=(8, 148)) -> (8, 64, 64, 192)
+I0409 07:44:22.729045 140687403906944 resnet_biggan.py:289] [Generator] Applying non-local block to (8, 64, 64, 192)
+I0409 07:44:22.773785 140687403906944 resnet_biggan.py:150] [Block] (8, 64, 64, 192) (z=(8, 20), y=(8, 148)) -> (8, 128, 128, 96)
+I0409 07:44:22.774040 140687403906944 resnet_biggan.py:294] [Generator] before final processing: (8, 128, 128, 96)
+I0409 07:44:22.795125 140687403906944 resnet_biggan.py:300] [Generator] after final processing: (8, 128, 128, 3)
+I0409 07:44:22.797870 140687403906944 s3gan.py:249] bs=8, rotated_bs=4, num_rot_examples=1
+---------------------------------------------------s3gan.py/merge_with_rotation_data,s
+---------------------------------------------------s3gan.py/merge_with_rotation_data,e
+--------------------------------------------------------------------s3gan.py/discriminator_with_additonal_heads,s
+I0409 07:44:22.833322 140687403906944 resnet_biggan.py:379] [Discriminator] inputs are x=(22, 128, 128, 3), y=(22, 2)
+I0409 07:44:22.879102 140687403906944 resnet_biggan.py:150] [Block] (22, 128, 128, 3) (z=None, y=(22, 2)) -> (22, 64, 64, 96)
+I0409 07:44:22.879311 140687403906944 resnet_biggan.py:398] [Discriminator] Applying non-local block to (22, 64, 64, 96)
+I0409 07:44:22.981515 140687403906944 resnet_biggan.py:150] [Block] (22, 64, 64, 96) (z=None, y=(22, 2)) -> (22, 32, 32, 192)
+I0409 07:44:23.022967 140687403906944 resnet_biggan.py:150] [Block] (22, 32, 32, 192) (z=None, y=(22, 2)) -> (22, 16, 16, 384)
+I0409 07:44:23.067680 140687403906944 resnet_biggan.py:150] [Block] (22, 16, 16, 384) (z=None, y=(22, 2)) -> (22, 8, 8, 768)
+I0409 07:44:23.109429 140687403906944 resnet_biggan.py:150] [Block] (22, 8, 8, 768) (z=None, y=(22, 2)) -> (22, 4, 4, 1536)
+I0409 07:44:23.135526 140687403906944 resnet_biggan.py:150] [Block] (22, 4, 4, 1536) (z=None, y=(22, 2)) -> (22, 4, 4, 1536)
+I0409 07:44:23.135708 140687403906944 resnet_biggan.py:403] [Discriminator] before final processing: (22, 4, 4, 1536)
+I0409 07:44:23.149337 140687403906944 resnet_biggan.py:407] [Discriminator] after final processing: (22, 4, 4, 1536)
+I0409 07:44:23.157487 140687403906944 resnet_biggan.py:422] [Discriminator] embedded_y for projection: (22, 1536)
+I0409 07:44:23.174899 140687403906944 s3gan.py:133] [Discriminator] rotation head (22, 1536) -> Tensor("disc_step_1/discriminator_rotation/score_classify/add:0", shape=(22, 4), dtype=float32)
+I0409 07:44:23.194356 140687403906944 s3gan.py:154] [Discriminator] (22, 2) -> aux_logits=(22, 2), y_predicted=(22, 2)
+---------------------------------------------------s3gan.py/get_class_embedding,s
+I0409 07:44:23.203350 140687403906944 s3gan.py:175] [Discriminator] embedded_y for projection: (22, 1536)
+---------------------------------------------------s3gan.py/get_class_embedding,e
+---------------------------------------------------s3gan.py/discriminator_with_additonal_heads,e
+---------------------------------------------------s3gan.py/create_loss,e
+# Train G.(train one step)
+I0409 07:44:24.425013 140687403906944 tpu_random.py:86] Got global random offset: Tensor("gen_step/strided_slice:0", shape=(), dtype=int32)
+---------------------------------------------------s3gan.py/create_loss,s
+W0409 07:44:24.428847 140687403906944 s3gan.py:237] Computing fake images for every sub step separately.
+I0409 07:44:24.429095 140687403906944 resnet_biggan.py:236] [Generator] inputs are z=(8, 120), y=(8, 2)
+I0409 07:44:24.436578 140687403906944 resnet_biggan.py:262] [Generator] z0=(8, 20), z_per_block=['(8, 20)', '(8, 20)', '(8, 20)', '(8, 20)', '(8, 20)'], y_per_block=['(8, 148)', '(8, 148)', '(8, 148)', '(8, 148)', '(8, 148)']
+I0409 07:44:24.463152 140687403906944 resnet_biggan.py:150] [Block] (8, 4, 4, 1536) (z=(8, 20), y=(8, 148)) -> (8, 8, 8, 1536)
+I0409 07:44:24.486118 140687403906944 resnet_biggan.py:150] [Block] (8, 8, 8, 1536) (z=(8, 20), y=(8, 148)) -> (8, 16, 16, 768)
+I0409 07:44:24.509187 140687403906944 resnet_biggan.py:150] [Block] (8, 16, 16, 768) (z=(8, 20), y=(8, 148)) -> (8, 32, 32, 384)
+I0409 07:44:24.531903 140687403906944 resnet_biggan.py:150] [Block] (8, 32, 32, 384) (z=(8, 20), y=(8, 148)) -> (8, 64, 64, 192)
+I0409 07:44:24.532098 140687403906944 resnet_biggan.py:289] [Generator] Applying non-local block to (8, 64, 64, 192)
+I0409 07:44:24.577771 140687403906944 resnet_biggan.py:150] [Block] (8, 64, 64, 192) (z=(8, 20), y=(8, 148)) -> (8, 128, 128, 96)
+I0409 07:44:24.578003 140687403906944 resnet_biggan.py:294] [Generator] before final processing: (8, 128, 128, 96)
+I0409 07:44:24.597778 140687403906944 resnet_biggan.py:300] [Generator] after final processing: (8, 128, 128, 3)
+I0409 07:44:24.600292 140687403906944 s3gan.py:249] bs=8, rotated_bs=4, num_rot_examples=1
+---------------------------------------------------s3gan.py/merge_with_rotation_data,s
+---------------------------------------------------s3gan.py/merge_with_rotation_data,e
+--------------------------------------------------------------------s3gan.py/discriminator_with_additonal_heads,s
+I0409 07:44:24.635047 140687403906944 resnet_biggan.py:379] [Discriminator] inputs are x=(22, 128, 128, 3), y=(22, 2)
+I0409 07:44:24.647394 140687403906944 resnet_biggan.py:150] [Block] (22, 128, 128, 3) (z=None, y=(22, 2)) -> (22, 64, 64, 96)
+I0409 07:44:24.647652 140687403906944 resnet_biggan.py:398] [Discriminator] Applying non-local block to (22, 64, 64, 96)
+I0409 07:44:24.686686 140687403906944 resnet_biggan.py:150] [Block] (22, 64, 64, 96) (z=None, y=(22, 2)) -> (22, 32, 32, 192)
+I0409 07:44:24.700263 140687403906944 resnet_biggan.py:150] [Block] (22, 32, 32, 192) (z=None, y=(22, 2)) -> (22, 16, 16, 384)
+I0409 07:44:24.712946 140687403906944 resnet_biggan.py:150] [Block] (22, 16, 16, 384) (z=None, y=(22, 2)) -> (22, 8, 8, 768)
+I0409 07:44:24.725129 140687403906944 resnet_biggan.py:150] [Block] (22, 8, 8, 768) (z=None, y=(22, 2)) -> (22, 4, 4, 1536)
+I0409 07:44:24.731886 140687403906944 resnet_biggan.py:150] [Block] (22, 4, 4, 1536) (z=None, y=(22, 2)) -> (22, 4, 4, 1536)
+I0409 07:44:24.732110 140687403906944 resnet_biggan.py:403] [Discriminator] before final processing: (22, 4, 4, 1536)
+I0409 07:44:24.736295 140687403906944 resnet_biggan.py:407] [Discriminator] after final processing: (22, 4, 4, 1536)
+I0409 07:44:24.738006 140687403906944 resnet_biggan.py:422] [Discriminator] embedded_y for projection: (22, 1536)
+I0409 07:44:24.745608 140687403906944 s3gan.py:133] [Discriminator] rotation head (22, 1536) -> Tensor("gen_step/discriminator_rotation/score_classify/add:0", shape=(22, 4), dtype=float32)
+I0409 07:44:24.753906 140687403906944 s3gan.py:154] [Discriminator] (22, 2) -> aux_logits=(22, 2), y_predicted=(22, 2)
+---------------------------------------------------s3gan.py/get_class_embedding,s
+I0409 07:44:24.755582 140687403906944 s3gan.py:175] [Discriminator] embedded_y for projection: (22, 1536)
+---------------------------------------------------s3gan.py/get_class_embedding,e
+---------------------------------------------------s3gan.py/discriminator_with_additonal_heads,e
+---------------------------------------------------s3gan.py/create_loss,e
+#add loss to summary
+I0409 07:44:26.281655 140687403906944 utils.py:174] 
+Generator variables:
++--------------------------------------------------+--------------------+------------+---------+
+| Name                                             | Shape              | Size       | Type    |
++--------------------------------------------------+--------------------+------------+---------+
+| generator/embed_y/kernel:0                       |           (2, 128) |        256 | float32 |
+| generator/fc_noise/kernel:0                      |        (20, 24576) |    491,520 | float32 |
+| generator/fc_noise/bias:0                        |           (24576,) |     24,576 | float32 |
+| generator/B1/up_conv1/kernel:0                   | (3, 3, 1536, 1536) | 21,233,664 | float32 |
+| generator/B1/up_conv1/bias:0                     |            (1536,) |      1,536 | float32 |
+| generator/B1/same_conv2/kernel:0                 | (3, 3, 1536, 1536) | 21,233,664 | float32 |
+| generator/B1/same_conv2/bias:0                   |            (1536,) |      1,536 | float32 |
+| generator/B1/up_conv_shortcut/kernel:0           | (1, 1, 1536, 1536) |  2,359,296 | float32 |
+| generator/B1/up_conv_shortcut/bias:0             |            (1536,) |      1,536 | float32 |
+| generator/B2/up_conv1/kernel:0                   |  (3, 3, 1536, 768) | 10,616,832 | float32 |
+| generator/B2/up_conv1/bias:0                     |             (768,) |        768 | float32 |
+| generator/B2/same_conv2/kernel:0                 |   (3, 3, 768, 768) |  5,308,416 | float32 |
+| generator/B2/same_conv2/bias:0                   |             (768,) |        768 | float32 |
+| generator/B2/up_conv_shortcut/kernel:0           |  (1, 1, 1536, 768) |  1,179,648 | float32 |
+| generator/B2/up_conv_shortcut/bias:0             |             (768,) |        768 | float32 |
+| generator/B3/up_conv1/kernel:0                   |   (3, 3, 768, 384) |  2,654,208 | float32 |
+| generator/B3/up_conv1/bias:0                     |             (384,) |        384 | float32 |
+| generator/B3/same_conv2/kernel:0                 |   (3, 3, 384, 384) |  1,327,104 | float32 |
+| generator/B3/same_conv2/bias:0                   |             (384,) |        384 | float32 |
+| generator/B3/up_conv_shortcut/kernel:0           |   (1, 1, 768, 384) |    294,912 | float32 |
+| generator/B3/up_conv_shortcut/bias:0             |             (384,) |        384 | float32 |
+| generator/B4/up_conv1/kernel:0                   |   (3, 3, 384, 192) |    663,552 | float32 |
+| generator/B4/up_conv1/bias:0                     |             (192,) |        192 | float32 |
+| generator/B4/same_conv2/kernel:0                 |   (3, 3, 192, 192) |    331,776 | float32 |
+| generator/B4/same_conv2/bias:0                   |             (192,) |        192 | float32 |
+| generator/B4/up_conv_shortcut/kernel:0           |   (1, 1, 384, 192) |     73,728 | float32 |
+| generator/B4/up_conv_shortcut/bias:0             |             (192,) |        192 | float32 |
+| generator/non_local_block/conv2d_theta/kernel:0  |    (1, 1, 192, 24) |      4,608 | float32 |
+| generator/non_local_block/conv2d_phi/kernel:0    |    (1, 1, 192, 24) |      4,608 | float32 |
+| generator/non_local_block/conv2d_g/kernel:0      |    (1, 1, 192, 96) |     18,432 | float32 |
+| generator/non_local_block/sigma:0                |                 () |          1 | float32 |
+| generator/non_local_block/conv2d_attn_g/kernel:0 |    (1, 1, 96, 192) |     18,432 | float32 |
+| generator/B5/up_conv1/kernel:0                   |    (3, 3, 192, 96) |    165,888 | float32 |
+| generator/B5/up_conv1/bias:0                     |              (96,) |         96 | float32 |
+| generator/B5/same_conv2/kernel:0                 |     (3, 3, 96, 96) |     82,944 | float32 |
+| generator/B5/same_conv2/bias:0                   |              (96,) |         96 | float32 |
+| generator/B5/up_conv_shortcut/kernel:0           |    (1, 1, 192, 96) |     18,432 | float32 |
+| generator/B5/up_conv_shortcut/bias:0             |              (96,) |         96 | float32 |
+| generator/final_norm/gamma:0                     |              (96,) |         96 | float32 |
+| generator/final_norm/beta:0                      |              (96,) |         96 | float32 |
+| generator/final_conv/kernel:0                    |      (3, 3, 96, 3) |      2,592 | float32 |
+| generator/final_conv/bias:0                      |               (3,) |          3 | float32 |
++--------------------------------------------------+--------------------+------------+---------+
+Total: 68,118,212
+I0409 07:44:26.282901 140687403906944 utils.py:174] 
+Discriminator variables:
++------------------------------------------------------+--------------------+------------+---------+
+| Name                                                 | Shape              | Size       | Type    |
++------------------------------------------------------+--------------------+------------+---------+
+| discriminator/B1/same_conv1/kernel:0                 |      (3, 3, 3, 96) |      2,592 | float32 |
+| discriminator/B1/same_conv1/bias:0                   |              (96,) |         96 | float32 |
+| discriminator/B1/down_conv2/kernel:0                 |     (3, 3, 96, 96) |     82,944 | float32 |
+| discriminator/B1/down_conv2/bias:0                   |              (96,) |         96 | float32 |
+| discriminator/B1/down_conv_shortcut/kernel:0         |      (1, 1, 3, 96) |        288 | float32 |
+| discriminator/B1/down_conv_shortcut/bias:0           |              (96,) |         96 | float32 |
+| discriminator/non_local_block/conv2d_theta/kernel:0  |     (1, 1, 96, 12) |      1,152 | float32 |
+| discriminator/non_local_block/conv2d_phi/kernel:0    |     (1, 1, 96, 12) |      1,152 | float32 |
+| discriminator/non_local_block/conv2d_g/kernel:0      |     (1, 1, 96, 48) |      4,608 | float32 |
+| discriminator/non_local_block/sigma:0                |                 () |          1 | float32 |
+| discriminator/non_local_block/conv2d_attn_g/kernel:0 |     (1, 1, 48, 96) |      4,608 | float32 |
+| discriminator/B2/same_conv1/kernel:0                 |    (3, 3, 96, 192) |    165,888 | float32 |
+| discriminator/B2/same_conv1/bias:0                   |             (192,) |        192 | float32 |
+| discriminator/B2/down_conv2/kernel:0                 |   (3, 3, 192, 192) |    331,776 | float32 |
+| discriminator/B2/down_conv2/bias:0                   |             (192,) |        192 | float32 |
+| discriminator/B2/down_conv_shortcut/kernel:0         |    (1, 1, 96, 192) |     18,432 | float32 |
+| discriminator/B2/down_conv_shortcut/bias:0           |             (192,) |        192 | float32 |
+| discriminator/B3/same_conv1/kernel:0                 |   (3, 3, 192, 384) |    663,552 | float32 |
+| discriminator/B3/same_conv1/bias:0                   |             (384,) |        384 | float32 |
+| discriminator/B3/down_conv2/kernel:0                 |   (3, 3, 384, 384) |  1,327,104 | float32 |
+| discriminator/B3/down_conv2/bias:0                   |             (384,) |        384 | float32 |
+| discriminator/B3/down_conv_shortcut/kernel:0         |   (1, 1, 192, 384) |     73,728 | float32 |
+| discriminator/B3/down_conv_shortcut/bias:0           |             (384,) |        384 | float32 |
+| discriminator/B4/same_conv1/kernel:0                 |   (3, 3, 384, 768) |  2,654,208 | float32 |
+| discriminator/B4/same_conv1/bias:0                   |             (768,) |        768 | float32 |
+| discriminator/B4/down_conv2/kernel:0                 |   (3, 3, 768, 768) |  5,308,416 | float32 |
+| discriminator/B4/down_conv2/bias:0                   |             (768,) |        768 | float32 |
+| discriminator/B4/down_conv_shortcut/kernel:0         |   (1, 1, 384, 768) |    294,912 | float32 |
+| discriminator/B4/down_conv_shortcut/bias:0           |             (768,) |        768 | float32 |
+| discriminator/B5/same_conv1/kernel:0                 |  (3, 3, 768, 1536) | 10,616,832 | float32 |
+| discriminator/B5/same_conv1/bias:0                   |            (1536,) |      1,536 | float32 |
+| discriminator/B5/down_conv2/kernel:0                 | (3, 3, 1536, 1536) | 21,233,664 | float32 |
+| discriminator/B5/down_conv2/bias:0                   |            (1536,) |      1,536 | float32 |
+| discriminator/B5/down_conv_shortcut/kernel:0         |  (1, 1, 768, 1536) |  1,179,648 | float32 |
+| discriminator/B5/down_conv_shortcut/bias:0           |            (1536,) |      1,536 | float32 |
+| discriminator/B6/same_conv1/kernel:0                 | (3, 3, 1536, 1536) | 21,233,664 | float32 |
+| discriminator/B6/same_conv1/bias:0                   |            (1536,) |      1,536 | float32 |
+| discriminator/B6/same_conv2/kernel:0                 | (3, 3, 1536, 1536) | 21,233,664 | float32 |
+| discriminator/B6/same_conv2/bias:0                   |            (1536,) |      1,536 | float32 |
+| discriminator/final_fc/kernel:0                      |          (1536, 1) |      1,536 | float32 |
+| discriminator/final_fc/bias:0                        |               (1,) |          1 | float32 |
+| discriminator/embedding_fc/kernel:0                  |          (2, 1536) |      3,072 | float32 |
+| discriminator_rotation/score_classify/kernel:0       |          (1536, 4) |      6,144 | float32 |
+| discriminator_rotation/score_classify/bias:0         |               (4,) |          4 | float32 |
+| discriminator_predictor/predictor_linear/kernel:0    |          (1536, 2) |      3,072 | float32 |
+| discriminator_predictor/predictor_linear/bias:0      |               (2,) |          2 | float32 |
+| discriminator_projection/kernel:0                    |          (2, 1536) |      3,072 | float32 |
++------------------------------------------------------+--------------------+------------+---------+
+Total: 86,461,736
+--------------------------------------------modular_gan.py/model_fn,e
+INFO:tensorflow:Done calling model_fn.
+I0409 07:44:26.283526 140687403906944 estimator.py:1171] Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+I0409 07:44:26.284994 140687403906944 basic_session_run_hooks.py:546] Create CheckpointSaverHook.
+INFO:tensorflow:Graph was finalized.
+I0409 07:44:27.519891 140687403906944 monitored_session.py:246] Graph was finalized.
+2020-04-09 07:44:27.526923: I tensorflow/core/platform/profile_utils/cpu_utils.cc:102] CPU Frequency: 2300000000 Hz
+2020-04-09 07:44:27.527192: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x12f52c0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-04-09 07:44:27.527230: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-04-09 07:44:27.618333: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-04-09 07:44:27.619336: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x8940000 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2020-04-09 07:44:27.619371: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Tesla P100-PCIE-16GB, Compute Capability 6.0
+2020-04-09 07:44:27.619927: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-04-09 07:44:27.620893: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1561] Found device 0 with properties: 
+pciBusID: 0000:00:04.0 name: Tesla P100-PCIE-16GB computeCapability: 6.0
+coreClock: 1.3285GHz coreCount: 56 deviceMemorySize: 15.90GiB deviceMemoryBandwidth: 681.88GiB/s
+2020-04-09 07:44:27.620997: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2020-04-09 07:44:27.621044: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2020-04-09 07:44:27.621072: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2020-04-09 07:44:27.621113: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2020-04-09 07:44:27.621136: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2020-04-09 07:44:27.621181: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2020-04-09 07:44:27.621207: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-04-09 07:44:27.621361: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-04-09 07:44:27.622281: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-04-09 07:44:27.623146: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1703] Adding visible gpu devices: 0
+2020-04-09 07:44:27.623202: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2020-04-09 07:44:28.189928: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1102] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-04-09 07:44:28.190015: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1108]      0 
+2020-04-09 07:44:28.190032: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1121] 0:   N 
+2020-04-09 07:44:28.190392: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-04-09 07:44:28.191345: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-04-09 07:44:28.192145: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+2020-04-09 07:44:28.192213: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1247] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14652 MB memory) -> physical GPU (device: 0, name: Tesla P100-PCIE-16GB, pci bus id: 0000:00:04.0, compute capability: 6.0)
+INFO:tensorflow:Running local_init_op.
+I0409 07:44:32.461709 140687403906944 session_manager.py:505] Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+I0409 07:44:32.528064 140687403906944 session_manager.py:508] Done running local_init_op.
+INFO:tensorflow:Calling checkpoint listeners before saving checkpoint 0...
+I0409 07:44:35.649316 140687403906944 basic_session_run_hooks.py:614] Calling checkpoint listeners before saving checkpoint 0...
+INFO:tensorflow:Saving checkpoints for 0 into /tmp/absl_testing/695705/model.ckpt.
+I0409 07:44:35.649714 140687403906944 basic_session_run_hooks.py:618] Saving checkpoints for 0 into /tmp/absl_testing/695705/model.ckpt.
+INFO:tensorflow:Calling checkpoint listeners after saving checkpoint 0...
+I0409 07:44:52.710825 140687403906944 basic_session_run_hooks.py:626] Calling checkpoint listeners after saving checkpoint 0...
+2020-04-09 07:45:01.353408: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2020-04-09 07:45:10.547645: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+INFO:tensorflow:loss = 93.92403, step = 0
+I0409 07:45:14.751897 140687403906944 basic_session_run_hooks.py:262] loss = 93.92403, step = 0
+INFO:tensorflow:global_step/sec: 1.71456
+I0409 07:46:13.075253 140687403906944 basic_session_run_hooks.py:702] global_step/sec: 1.71456
+INFO:tensorflow:loss = 0.229834, step = 100 (58.325 sec)
+I0409 07:46:13.076572 140687403906944 basic_session_run_hooks.py:260] loss = 0.229834, step = 100 (58.325 sec)
+INFO:tensorflow:global_step/sec: 1.86496
+I0409 07:47:06.695724 140687403906944 basic_session_run_hooks.py:702] global_step/sec: 1.86496
+INFO:tensorflow:loss = 2.8971696, step = 200 (53.620 sec)
+I0409 07:47:06.697068 140687403906944 basic_session_run_hooks.py:260] loss = 2.8971696, step = 200 (53.620 sec)
+INFO:tensorflow:global_step/sec: 1.85756
+I0409 07:48:00.530035 140687403906944 basic_session_run_hooks.py:702] global_step/sec: 1.85756
+INFO:tensorflow:loss = 0.14638416, step = 300 (53.835 sec)
+I0409 07:48:00.531605 140687403906944 basic_session_run_hooks.py:260] loss = 0.14638416, step = 300 (53.835 sec)
+INFO:tensorflow:global_step/sec: 1.85503
+I0409 07:48:54.437360 140687403906944 basic_session_run_hooks.py:702] global_step/sec: 1.85503
+INFO:tensorflow:loss = 0.7897272, step = 400 (53.907 sec)
+I0409 07:48:54.438607 140687403906944 basic_session_run_hooks.py:260] loss = 0.7897272, step = 400 (53.907 sec)
+INFO:tensorflow:global_step/sec: 1.85254
+I0409 07:49:48.417439 140687403906944 basic_session_run_hooks.py:702] global_step/sec: 1.85254
+INFO:tensorflow:loss = 0.12409918, step = 500 (53.980 sec)
+I0409 07:49:48.418516 140687403906944 basic_session_run_hooks.py:260] loss = 0.12409918, step = 500 (53.980 sec)
+INFO:tensorflow:global_step/sec: 1.85443
+I0409 07:50:42.342166 140687403906944 basic_session_run_hooks.py:702] global_step/sec: 1.85443
+INFO:tensorflow:loss = 0.36866733, step = 600 (53.925 sec)
+I0409 07:50:42.343142 140687403906944 basic_session_run_hooks.py:260] loss = 0.36866733, step = 600 (53.925 sec)
+INFO:tensorflow:global_step/sec: 1.85483
+I0409 07:51:36.255493 140687403906944 basic_session_run_hooks.py:702] global_step/sec: 1.85483
+INFO:tensorflow:loss = 0.31700584, step = 700 (53.913 sec)
+I0409 07:51:36.256489 140687403906944 basic_session_run_hooks.py:260] loss = 0.31700584, step = 700 (53.913 sec)
+INFO:tensorflow:global_step/sec: 1.8559
+I0409 07:52:30.137776 140687403906944 basic_session_run_hooks.py:702] global_step/sec: 1.8559
+INFO:tensorflow:loss = 0.3433364, step = 800 (53.883 sec)
+I0409 07:52:30.139017 140687403906944 basic_session_run_hooks.py:260] loss = 0.3433364, step = 800 (53.883 sec)
+INFO:tensorflow:global_step/sec: 1.85395
+I0409 07:53:24.076759 140687403906944 basic_session_run_hooks.py:702] global_step/sec: 1.85395
+INFO:tensorflow:loss = 0.036517985, step = 900 (53.939 sec)
+I0409 07:53:24.078145 140687403906944 basic_session_run_hooks.py:260] loss = 0.036517985, step = 900 (53.939 sec)
+INFO:tensorflow:global_step/sec: 1.85451
+I0409 07:54:17.999373 140687403906944 basic_session_run_hooks.py:702] global_step/sec: 1.85451
+INFO:tensorflow:loss = 0.0071442416, step = 1000 (53.922 sec)
+I0409 07:54:18.000418 140687403906944 basic_session_run_hooks.py:260] loss = 0.0071442416, step = 1000 (53.922 sec)
+INFO:tensorflow:Calling checkpoint listeners before saving checkpoint 1066...
+I0409 07:54:53.010280 140687403906944 basic_session_run_hooks.py:614] Calling checkpoint listeners before saving checkpoint 1066...
+INFO:tensorflow:Saving checkpoints for 1066 into /tmp/absl_testing/695705/model.ckpt.
+I0409 07:54:53.010627 140687403906944 basic_session_run_hooks.py:618] Saving checkpoints for 1066 into /tmp/absl_testing/695705/model.ckpt.
+INFO:tensorflow:Calling checkpoint listeners after saving checkpoint 1066...
+I0409 07:55:09.299249 140687403906944 basic_session_run_hooks.py:626] Calling checkpoint listeners after saving checkpoint 1066...
+--------------------------------------------datasets.py/eval_input_fn,s
+W0409 07:55:09.314417 140687403906944 datasets.py:170] No TPUContext, using unmodified dataset seed 547.
+I0409 07:55:09.314584 140687403906944 datasets.py:348] eval_input_fn(): params={'use_tpu': False, 'train_batch_size': 8, 'batch_size': 8} seed=547
+--------befor self._load_dataset------------------split = validation self._eval_split= validation
+--------------------------------------------datasets.py/_load_dataset,s
+!!!!!!!!!!!!!!!!!!!!!!----load_local_datasets,  _local_test_ds_dir= /content/drive/My Drive/drive/gan/test
+-----------------------------------------get_local_datasets,s
+-----------------------------------------get_local_datasets,e
+--------------------------------------------modular_gan.py/_preprocess_fn,s
+I0409 07:55:09.544483 140687403906944 api.py:587] _preprocess_fn(): images=Tensor("args_0:0", shape=(128, 128, 3), dtype=float32), labels=Tensor("args_1:0", shape=(), dtype=int32), seed=547
+--------------------------------------------modular_gan.py/_preprocess_fn,e
+I0409 07:55:09.585912 140687403906944 api.py:587] Passing random offset: Tensor("Cast:0", shape=(), dtype=int32) with data ({'images': <tf.Tensor 'args_1:0' shape=(128, 128, 3) dtype=float32>, 'z': <tf.Tensor 'args_3:0' shape=(120,) dtype=float32>, 'sampled_labels': <tf.Tensor 'args_2:0' shape=() dtype=int32>}, <tf.Tensor 'args_4:0' shape=() dtype=int32>).
+--------------------------------------------datasets.py/eval_input_fn,e
+INFO:tensorflow:Calling model_fn.
+I0409 07:55:09.616620 140687403906944 estimator.py:1169] Calling model_fn.
+--------------------------------------------modular_gan.py/model_fn,s
+I0409 07:55:09.616819 140687403906944 modular_gan.py:569] model_fn(): features={'images': <tf.Tensor 'IteratorGetNext:1' shape=(8, 128, 128, 3) dtype=float32>, 'z': <tf.Tensor 'IteratorGetNext:3' shape=(8, 120) dtype=float32>, 'sampled_labels': <tf.Tensor 'IteratorGetNext:2' shape=(8,) dtype=int32>, '_RANDOM_OFFSET': <tf.Tensor 'IteratorGetNext:0' shape=(8,) dtype=int32>}, labels=Tensor("IteratorGetNext:4", shape=(8,), dtype=int32),mode=eval, params={'use_tpu': False, 'train_batch_size': 8, 'batch_size': 8}
+#Clean old summaries from previous calls to model_fn().
+# Get features and labels for each sub-step.
+--------------------------------------------modular_gan.py/_split_inputs_and_generate_samples,s
+I0409 07:55:09.627872 140687403906944 resnet_biggan.py:236] [Generator] inputs are z=(8, 120), y=(8, 2)
+I0409 07:55:09.644479 140687403906944 resnet_biggan.py:262] [Generator] z0=(8, 20), z_per_block=['(8, 20)', '(8, 20)', '(8, 20)', '(8, 20)', '(8, 20)'], y_per_block=['(8, 148)', '(8, 148)', '(8, 148)', '(8, 148)', '(8, 148)']
+I0409 07:55:09.718473 140687403906944 resnet_biggan.py:150] [Block] (8, 4, 4, 1536) (z=(8, 20), y=(8, 148)) -> (8, 8, 8, 1536)
+I0409 07:55:09.783288 140687403906944 resnet_biggan.py:150] [Block] (8, 8, 8, 1536) (z=(8, 20), y=(8, 148)) -> (8, 16, 16, 768)
+I0409 07:55:09.840790 140687403906944 resnet_biggan.py:150] [Block] (8, 16, 16, 768) (z=(8, 20), y=(8, 148)) -> (8, 32, 32, 384)
+I0409 07:55:09.897568 140687403906944 resnet_biggan.py:150] [Block] (8, 32, 32, 384) (z=(8, 20), y=(8, 148)) -> (8, 64, 64, 192)
+I0409 07:55:09.897770 140687403906944 resnet_biggan.py:289] [Generator] Applying non-local block to (8, 64, 64, 192)
+I0409 07:55:10.012110 140687403906944 resnet_biggan.py:150] [Block] (8, 64, 64, 192) (z=(8, 20), y=(8, 148)) -> (8, 128, 128, 96)
+I0409 07:55:10.012366 140687403906944 resnet_biggan.py:294] [Generator] before final processing: (8, 128, 128, 96)
+I0409 07:55:10.060087 140687403906944 resnet_biggan.py:300] [Generator] after final processing: (8, 128, 128, 3)
+--------------------------------------------modular_gan.py/_split_inputs_and_generate_samples,e
+---------------------------------------------------modular_gan.py/create_logits,s
+I0409 07:55:10.065661 140687403906944 tpu_random.py:86] Got global random offset: Tensor("strided_slice:0", shape=(), dtype=int32)
+---------------------------------------------------s3gan.py/create_loss,s
+W0409 07:55:10.069352 140687403906944 s3gan.py:237] Computing fake images for every sub step separately.
+I0409 07:55:10.069648 140687403906944 resnet_biggan.py:236] [Generator] inputs are z=(8, 120), y=(8, 2)
+I0409 07:55:10.077895 140687403906944 resnet_biggan.py:262] [Generator] z0=(8, 20), z_per_block=['(8, 20)', '(8, 20)', '(8, 20)', '(8, 20)', '(8, 20)'], y_per_block=['(8, 148)', '(8, 148)', '(8, 148)', '(8, 148)', '(8, 148)']
+I0409 07:55:10.112913 140687403906944 resnet_biggan.py:150] [Block] (8, 4, 4, 1536) (z=(8, 20), y=(8, 148)) -> (8, 8, 8, 1536)
+I0409 07:55:10.138035 140687403906944 resnet_biggan.py:150] [Block] (8, 8, 8, 1536) (z=(8, 20), y=(8, 148)) -> (8, 16, 16, 768)
+I0409 07:55:10.162073 140687403906944 resnet_biggan.py:150] [Block] (8, 16, 16, 768) (z=(8, 20), y=(8, 148)) -> (8, 32, 32, 384)
+I0409 07:55:10.186281 140687403906944 resnet_biggan.py:150] [Block] (8, 32, 32, 384) (z=(8, 20), y=(8, 148)) -> (8, 64, 64, 192)
+I0409 07:55:10.186559 140687403906944 resnet_biggan.py:289] [Generator] Applying non-local block to (8, 64, 64, 192)
+I0409 07:55:10.233817 140687403906944 resnet_biggan.py:150] [Block] (8, 64, 64, 192) (z=(8, 20), y=(8, 148)) -> (8, 128, 128, 96)
+I0409 07:55:10.234014 140687403906944 resnet_biggan.py:294] [Generator] before final processing: (8, 128, 128, 96)
+I0409 07:55:10.254429 140687403906944 resnet_biggan.py:300] [Generator] after final processing: (8, 128, 128, 3)
+I0409 07:55:10.256695 140687403906944 s3gan.py:249] bs=8, rotated_bs=4, num_rot_examples=1
+---------------------------------------------------s3gan.py/merge_with_rotation_data,s
+---------------------------------------------------s3gan.py/merge_with_rotation_data,e
+--------------------------------------------------------------------s3gan.py/discriminator_with_additonal_heads,s
+I0409 07:55:10.292201 140687403906944 resnet_biggan.py:379] [Discriminator] inputs are x=(22, 128, 128, 3), y=(22, 2)
+I0409 07:55:10.345031 140687403906944 resnet_biggan.py:150] [Block] (22, 128, 128, 3) (z=None, y=(22, 2)) -> (22, 64, 64, 96)
+I0409 07:55:10.345313 140687403906944 resnet_biggan.py:398] [Discriminator] Applying non-local block to (22, 64, 64, 96)
+I0409 07:55:10.444589 140687403906944 resnet_biggan.py:150] [Block] (22, 64, 64, 96) (z=None, y=(22, 2)) -> (22, 32, 32, 192)
+I0409 07:55:10.487930 140687403906944 resnet_biggan.py:150] [Block] (22, 32, 32, 192) (z=None, y=(22, 2)) -> (22, 16, 16, 384)
+I0409 07:55:10.531812 140687403906944 resnet_biggan.py:150] [Block] (22, 16, 16, 384) (z=None, y=(22, 2)) -> (22, 8, 8, 768)
+I0409 07:55:10.576951 140687403906944 resnet_biggan.py:150] [Block] (22, 8, 8, 768) (z=None, y=(22, 2)) -> (22, 4, 4, 1536)
+I0409 07:55:10.607746 140687403906944 resnet_biggan.py:150] [Block] (22, 4, 4, 1536) (z=None, y=(22, 2)) -> (22, 4, 4, 1536)
+I0409 07:55:10.608007 140687403906944 resnet_biggan.py:403] [Discriminator] before final processing: (22, 4, 4, 1536)
+I0409 07:55:10.624272 140687403906944 resnet_biggan.py:407] [Discriminator] after final processing: (22, 4, 4, 1536)
+I0409 07:55:10.633014 140687403906944 resnet_biggan.py:422] [Discriminator] embedded_y for projection: (22, 1536)
+I0409 07:55:10.650851 140687403906944 s3gan.py:133] [Discriminator] rotation head (22, 1536) -> Tensor("discriminator_rotation/score_classify/add:0", shape=(22, 4), dtype=float32)
+I0409 07:55:10.669248 140687403906944 s3gan.py:154] [Discriminator] (22, 2) -> aux_logits=(22, 2), y_predicted=(22, 2)
+---------------------------------------------------s3gan.py/get_class_embedding,s
+I0409 07:55:10.677805 140687403906944 s3gan.py:175] [Discriminator] embedded_y for projection: (22, 1536)
+---------------------------------------------------s3gan.py/get_class_embedding,e
+---------------------------------------------------s3gan.py/discriminator_with_additonal_heads,e
+---------------------------------------------------s3gan.py/create_loss,e
+---------------------------------------------------modular_gan.py/create_logits,e
+################################################## mode == tf.estimator.ModeKeys.EVAL  ########################
+INFO:tensorflow:Done calling model_fn.
+I0409 07:55:10.807487 140687403906944 estimator.py:1171] Done calling model_fn.
+INFO:tensorflow:Starting evaluation at 2020-04-09T07:55:10Z
+I0409 07:55:10.832436 140687403906944 evaluation.py:255] Starting evaluation at 2020-04-09T07:55:10Z
+INFO:tensorflow:Graph was finalized.
+I0409 07:55:11.046239 140687403906944 monitored_session.py:246] Graph was finalized.
+2020-04-09 07:55:11.047528: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-04-09 07:55:11.048276: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1561] Found device 0 with properties: 
+pciBusID: 0000:00:04.0 name: Tesla P100-PCIE-16GB computeCapability: 6.0
+coreClock: 1.3285GHz coreCount: 56 deviceMemorySize: 15.90GiB deviceMemoryBandwidth: 681.88GiB/s
+2020-04-09 07:55:11.048339: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2020-04-09 07:55:11.048376: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2020-04-09 07:55:11.048430: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2020-04-09 07:55:11.048480: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2020-04-09 07:55:11.048504: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2020-04-09 07:55:11.048556: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2020-04-09 07:55:11.048591: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-04-09 07:55:11.048751: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-04-09 07:55:11.049472: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-04-09 07:55:11.050071: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1703] Adding visible gpu devices: 0
+2020-04-09 07:55:11.050134: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1102] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-04-09 07:55:11.050154: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1108]      0 
+2020-04-09 07:55:11.050167: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1121] 0:   N 
+2020-04-09 07:55:11.050315: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-04-09 07:55:11.050992: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-04-09 07:55:11.051580: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1247] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14652 MB memory) -> physical GPU (device: 0, name: Tesla P100-PCIE-16GB, pci bus id: 0000:00:04.0, compute capability: 6.0)
+INFO:tensorflow:Restoring parameters from /tmp/absl_testing/695705/model.ckpt-1066
+I0409 07:55:11.052766 140687403906944 saver.py:1293] Restoring parameters from /tmp/absl_testing/695705/model.ckpt-1066
+INFO:tensorflow:Running local_init_op.
+I0409 07:55:11.560024 140687403906944 session_manager.py:505] Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+I0409 07:55:11.584632 140687403906944 session_manager.py:508] Done running local_init_op.
+INFO:tensorflow:Evaluation [1/10]
+I0409 07:55:13.663605 140687403906944 evaluation.py:167] Evaluation [1/10]
+INFO:tensorflow:Evaluation [2/10]
+I0409 07:55:13.770743 140687403906944 evaluation.py:167] Evaluation [2/10]
+INFO:tensorflow:Evaluation [3/10]
+I0409 07:55:13.876438 140687403906944 evaluation.py:167] Evaluation [3/10]
+INFO:tensorflow:Evaluation [4/10]
+I0409 07:55:13.982703 140687403906944 evaluation.py:167] Evaluation [4/10]
+INFO:tensorflow:Evaluation [5/10]
+I0409 07:55:14.088418 140687403906944 evaluation.py:167] Evaluation [5/10]
+INFO:tensorflow:Evaluation [6/10]
+I0409 07:55:14.192808 140687403906944 evaluation.py:167] Evaluation [6/10]
+INFO:tensorflow:Evaluation [7/10]
+I0409 07:55:14.297617 140687403906944 evaluation.py:167] Evaluation [7/10]
+INFO:tensorflow:Evaluation [8/10]
+I0409 07:55:14.402184 140687403906944 evaluation.py:167] Evaluation [8/10]
+INFO:tensorflow:Evaluation [9/10]
+I0409 07:55:14.508239 140687403906944 evaluation.py:167] Evaluation [9/10]
+INFO:tensorflow:Evaluation [10/10]
+I0409 07:55:14.612197 140687403906944 evaluation.py:167] Evaluation [10/10]
+INFO:tensorflow:Inference Time : 3.82605s
+I0409 07:55:14.658693 140687403906944 evaluation.py:273] Inference Time : 3.82605s
+INFO:tensorflow:Finished evaluation at 2020-04-09-07:55:14
+I0409 07:55:14.658913 140687403906944 evaluation.py:276] Finished evaluation at 2020-04-09-07:55:14
+INFO:tensorflow:Saving dict for global step 1066: accuracy = 1.0, global_step = 1066, loss = 5.2982655
+I0409 07:55:14.659108 140687403906944 estimator.py:2066] Saving dict for global step 1066: accuracy = 1.0, global_step = 1066, loss = 5.2982655
+INFO:tensorflow:Saving 'checkpoint_path' summary for global step 1066: /tmp/absl_testing/695705/model.ckpt-1066
+I0409 07:55:14.901044 140687403906944 estimator.py:2127] Saving 'checkpoint_path' summary for global step 1066: /tmp/absl_testing/695705/model.ckpt-1066
+INFO:tensorflow:global_step/sec: 1.32142
+I0409 07:55:33.675434 140687403906944 basic_session_run_hooks.py:702] global_step/sec: 1.32142
+INFO:tensorflow:loss = 0.009913577, step = 1100 (75.676 sec)
+I0409 07:55:33.676467 140687403906944 basic_session_run_hooks.py:260] loss = 0.009913577, step = 1100 (75.676 sec)
+INFO:tensorflow:global_step/sec: 1.86527
+I0409 07:56:27.287072 140687403906944 basic_session_run_hooks.py:702] global_step/sec: 1.86527
+INFO:tensorflow:loss = 0.1336954, step = 1200 (53.612 sec)
+I0409 07:56:27.288038 140687403906944 basic_session_run_hooks.py:260] loss = 0.1336954, step = 1200 (53.612 sec)
+INFO:tensorflow:global_step/sec: 1.86485
+I0409 07:57:20.910654 140687403906944 basic_session_run_hooks.py:702] global_step/sec: 1.86485
+INFO:tensorflow:loss = 0.014038406, step = 1300 (53.624 sec)
+I0409 07:57:20.911844 140687403906944 basic_session_run_hooks.py:260] loss = 0.014038406, step = 1300 (53.624 sec)
+INFO:tensorflow:global_step/sec: 1.86393
+I0409 07:58:14.560754 140687403906944 basic_session_run_hooks.py:702] global_step/sec: 1.86393
+INFO:tensorflow:loss = 0.444528, step = 1400 (53.650 sec)
+I0409 07:58:14.561828 140687403906944 basic_session_run_hooks.py:260] loss = 0.444528, step = 1400 (53.650 sec)
+INFO:tensorflow:global_step/sec: 1.86281
+I0409 07:59:08.243075 140687403906944 basic_session_run_hooks.py:702] global_step/sec: 1.86281
+INFO:tensorflow:loss = 0.13409895, step = 1500 (53.682 sec)
+I0409 07:59:08.244269 140687403906944 basic_session_run_hooks.py:260] loss = 0.13409895, step = 1500 (53.682 sec)
+INFO:tensorflow:global_step/sec: 1.86484
+I0409 08:00:01.866830 140687403906944 basic_session_run_hooks.py:702] global_step/sec: 1.86484
+INFO:tensorflow:loss = 0.016169393, step = 1600 (53.625 sec)
+I0409 08:00:01.868791 140687403906944 basic_session_run_hooks.py:260] loss = 0.016169393, step = 1600 (53.625 sec)
+INFO:tensorflow:global_step/sec: 1.8635
+I0409 08:00:55.529177 140687403906944 basic_session_run_hooks.py:702] global_step/sec: 1.8635
+INFO:tensorflow:loss = 0.5452835, step = 1700 (53.662 sec)
+I0409 08:00:55.530475 140687403906944 basic_session_run_hooks.py:260] loss = 0.5452835, step = 1700 (53.662 sec)
+INFO:tensorflow:global_step/sec: 1.86364
+I0409 08:01:49.187652 140687403906944 basic_session_run_hooks.py:702] global_step/sec: 1.86364
+INFO:tensorflow:loss = 0.17545769, step = 1800 (53.658 sec)
+I0409 08:01:49.188818 140687403906944 basic_session_run_hooks.py:260] loss = 0.17545769, step = 1800 (53.658 sec)
+INFO:tensorflow:global_step/sec: 1.86438
+I0409 08:02:42.824709 140687403906944 basic_session_run_hooks.py:702] global_step/sec: 1.86438
+INFO:tensorflow:loss = 1.8310437, step = 1900 (53.637 sec)
+I0409 08:02:42.825975 140687403906944 basic_session_run_hooks.py:260] loss = 1.8310437, step = 1900 (53.637 sec)
+INFO:tensorflow:global_step/sec: 1.86489
+I0409 08:03:36.447224 140687403906944 basic_session_run_hooks.py:702] global_step/sec: 1.86489
+INFO:tensorflow:loss = 0.08590925, step = 2000 (53.622 sec)
+I0409 08:03:36.448173 140687403906944 basic_session_run_hooks.py:260] loss = 0.08590925, step = 2000 (53.622 sec)
+INFO:tensorflow:global_step/sec: 1.86374
+I0409 08:04:30.102810 140687403906944 basic_session_run_hooks.py:702] global_step/sec: 1.86374
+INFO:tensorflow:loss = 0.020372916, step = 2100 (53.656 sec)
+I0409 08:04:30.103781 140687403906944 basic_session_run_hooks.py:260] loss = 0.020372916, step = 2100 (53.656 sec)
+INFO:tensorflow:Calling checkpoint listeners before saving checkpoint 2144...
+I0409 08:04:53.183121 140687403906944 basic_session_run_hooks.py:614] Calling checkpoint listeners before saving checkpoint 2144...
+INFO:tensorflow:Saving checkpoints for 2144 into /tmp/absl_testing/695705/model.ckpt.
+I0409 08:04:53.183596 140687403906944 basic_session_run_hooks.py:618] Saving checkpoints for 2144 into /tmp/absl_testing/695705/model.ckpt.
+INFO:tensorflow:Calling checkpoint listeners after saving checkpoint 2144...
+I0409 08:05:10.564175 140687403906944 basic_session_run_hooks.py:626] Calling checkpoint listeners after saving checkpoint 2144...
+--------------------------------------------datasets.py/eval_input_fn,s
+W0409 08:05:12.586997 140687403906944 datasets.py:170] No TPUContext, using unmodified dataset seed 547.
+I0409 08:05:12.587219 140687403906944 datasets.py:348] eval_input_fn(): params={'use_tpu': False, 'train_batch_size': 8, 'batch_size': 8} seed=547
+--------befor self._load_dataset------------------split = validation self._eval_split= validation
+--------------------------------------------datasets.py/_load_dataset,s
+!!!!!!!!!!!!!!!!!!!!!!----load_local_datasets,  _local_test_ds_dir= /content/drive/My Drive/drive/gan/test
+-----------------------------------------get_local_datasets,s
+-----------------------------------------get_local_datasets,e
+--------------------------------------------modular_gan.py/_preprocess_fn,s
+I0409 08:05:12.691732 140687403906944 api.py:587] _preprocess_fn(): images=Tensor("args_0:0", shape=(128, 128, 3), dtype=float32), labels=Tensor("args_1:0", shape=(), dtype=int32), seed=547
+--------------------------------------------modular_gan.py/_preprocess_fn,e
+I0409 08:05:12.732760 140687403906944 api.py:587] Passing random offset: Tensor("Cast:0", shape=(), dtype=int32) with data ({'images': <tf.Tensor 'args_1:0' shape=(128, 128, 3) dtype=float32>, 'z': <tf.Tensor 'args_3:0' shape=(120,) dtype=float32>, 'sampled_labels': <tf.Tensor 'args_2:0' shape=() dtype=int32>}, <tf.Tensor 'args_4:0' shape=() dtype=int32>).
+--------------------------------------------datasets.py/eval_input_fn,e
+INFO:tensorflow:Calling model_fn.
+I0409 08:05:12.755135 140687403906944 estimator.py:1169] Calling model_fn.
+--------------------------------------------modular_gan.py/model_fn,s
+I0409 08:05:12.755384 140687403906944 modular_gan.py:569] model_fn(): features={'images': <tf.Tensor 'IteratorGetNext:1' shape=(8, 128, 128, 3) dtype=float32>, 'z': <tf.Tensor 'IteratorGetNext:3' shape=(8, 120) dtype=float32>, 'sampled_labels': <tf.Tensor 'IteratorGetNext:2' shape=(8,) dtype=int32>, '_RANDOM_OFFSET': <tf.Tensor 'IteratorGetNext:0' shape=(8,) dtype=int32>}, labels=Tensor("IteratorGetNext:4", shape=(8,), dtype=int32),mode=eval, params={'use_tpu': False, 'train_batch_size': 8, 'batch_size': 8}
+#Clean old summaries from previous calls to model_fn().
+# Get features and labels for each sub-step.
+--------------------------------------------modular_gan.py/_split_inputs_and_generate_samples,s
+I0409 08:05:12.764687 140687403906944 resnet_biggan.py:236] [Generator] inputs are z=(8, 120), y=(8, 2)
+I0409 08:05:12.778672 140687403906944 resnet_biggan.py:262] [Generator] z0=(8, 20), z_per_block=['(8, 20)', '(8, 20)', '(8, 20)', '(8, 20)', '(8, 20)'], y_per_block=['(8, 148)', '(8, 148)', '(8, 148)', '(8, 148)', '(8, 148)']
+I0409 08:05:12.843008 140687403906944 resnet_biggan.py:150] [Block] (8, 4, 4, 1536) (z=(8, 20), y=(8, 148)) -> (8, 8, 8, 1536)
+I0409 08:05:12.908663 140687403906944 resnet_biggan.py:150] [Block] (8, 8, 8, 1536) (z=(8, 20), y=(8, 148)) -> (8, 16, 16, 768)
+I0409 08:05:12.961679 140687403906944 resnet_biggan.py:150] [Block] (8, 16, 16, 768) (z=(8, 20), y=(8, 148)) -> (8, 32, 32, 384)
+I0409 08:05:13.014819 140687403906944 resnet_biggan.py:150] [Block] (8, 32, 32, 384) (z=(8, 20), y=(8, 148)) -> (8, 64, 64, 192)
+I0409 08:05:13.015003 140687403906944 resnet_biggan.py:289] [Generator] Applying non-local block to (8, 64, 64, 192)
+I0409 08:05:13.115785 140687403906944 resnet_biggan.py:150] [Block] (8, 64, 64, 192) (z=(8, 20), y=(8, 148)) -> (8, 128, 128, 96)
+I0409 08:05:13.116063 140687403906944 resnet_biggan.py:294] [Generator] before final processing: (8, 128, 128, 96)
+I0409 08:05:13.161140 140687403906944 resnet_biggan.py:300] [Generator] after final processing: (8, 128, 128, 3)
+--------------------------------------------modular_gan.py/_split_inputs_and_generate_samples,e
+---------------------------------------------------modular_gan.py/create_logits,s
+I0409 08:05:13.166524 140687403906944 tpu_random.py:86] Got global random offset: Tensor("strided_slice:0", shape=(), dtype=int32)
+---------------------------------------------------s3gan.py/create_loss,s
+W0409 08:05:13.170088 140687403906944 s3gan.py:237] Computing fake images for every sub step separately.
+I0409 08:05:13.170332 140687403906944 resnet_biggan.py:236] [Generator] inputs are z=(8, 120), y=(8, 2)
+I0409 08:05:13.177878 140687403906944 resnet_biggan.py:262] [Generator] z0=(8, 20), z_per_block=['(8, 20)', '(8, 20)', '(8, 20)', '(8, 20)', '(8, 20)'], y_per_block=['(8, 148)', '(8, 148)', '(8, 148)', '(8, 148)', '(8, 148)']
+I0409 08:05:13.202516 140687403906944 resnet_biggan.py:150] [Block] (8, 4, 4, 1536) (z=(8, 20), y=(8, 148)) -> (8, 8, 8, 1536)
+I0409 08:05:13.224780 140687403906944 resnet_biggan.py:150] [Block] (8, 8, 8, 1536) (z=(8, 20), y=(8, 148)) -> (8, 16, 16, 768)
+I0409 08:05:13.247539 140687403906944 resnet_biggan.py:150] [Block] (8, 16, 16, 768) (z=(8, 20), y=(8, 148)) -> (8, 32, 32, 384)
+I0409 08:05:13.270813 140687403906944 resnet_biggan.py:150] [Block] (8, 32, 32, 384) (z=(8, 20), y=(8, 148)) -> (8, 64, 64, 192)
+I0409 08:05:13.271027 140687403906944 resnet_biggan.py:289] [Generator] Applying non-local block to (8, 64, 64, 192)
+I0409 08:05:13.327764 140687403906944 resnet_biggan.py:150] [Block] (8, 64, 64, 192) (z=(8, 20), y=(8, 148)) -> (8, 128, 128, 96)
+I0409 08:05:13.328043 140687403906944 resnet_biggan.py:294] [Generator] before final processing: (8, 128, 128, 96)
+I0409 08:05:13.350268 140687403906944 resnet_biggan.py:300] [Generator] after final processing: (8, 128, 128, 3)
+I0409 08:05:13.352804 140687403906944 s3gan.py:249] bs=8, rotated_bs=4, num_rot_examples=1
+---------------------------------------------------s3gan.py/merge_with_rotation_data,s
+---------------------------------------------------s3gan.py/merge_with_rotation_data,e
+--------------------------------------------------------------------s3gan.py/discriminator_with_additonal_heads,s
+I0409 08:05:13.389672 140687403906944 resnet_biggan.py:379] [Discriminator] inputs are x=(22, 128, 128, 3), y=(22, 2)
+I0409 08:05:13.433668 140687403906944 resnet_biggan.py:150] [Block] (22, 128, 128, 3) (z=None, y=(22, 2)) -> (22, 64, 64, 96)
+I0409 08:05:13.433877 140687403906944 resnet_biggan.py:398] [Discriminator] Applying non-local block to (22, 64, 64, 96)
+I0409 08:05:13.527515 140687403906944 resnet_biggan.py:150] [Block] (22, 64, 64, 96) (z=None, y=(22, 2)) -> (22, 32, 32, 192)
+I0409 08:05:13.574521 140687403906944 resnet_biggan.py:150] [Block] (22, 32, 32, 192) (z=None, y=(22, 2)) -> (22, 16, 16, 384)
+I0409 08:05:13.617391 140687403906944 resnet_biggan.py:150] [Block] (22, 16, 16, 384) (z=None, y=(22, 2)) -> (22, 8, 8, 768)
+I0409 08:05:13.659971 140687403906944 resnet_biggan.py:150] [Block] (22, 8, 8, 768) (z=None, y=(22, 2)) -> (22, 4, 4, 1536)
+I0409 08:05:13.687523 140687403906944 resnet_biggan.py:150] [Block] (22, 4, 4, 1536) (z=None, y=(22, 2)) -> (22, 4, 4, 1536)
+I0409 08:05:13.687723 140687403906944 resnet_biggan.py:403] [Discriminator] before final processing: (22, 4, 4, 1536)
+I0409 08:05:13.702067 140687403906944 resnet_biggan.py:407] [Discriminator] after final processing: (22, 4, 4, 1536)
+I0409 08:05:13.711381 140687403906944 resnet_biggan.py:422] [Discriminator] embedded_y for projection: (22, 1536)
+I0409 08:05:13.728810 140687403906944 s3gan.py:133] [Discriminator] rotation head (22, 1536) -> Tensor("discriminator_rotation/score_classify/add:0", shape=(22, 4), dtype=float32)
+I0409 08:05:13.746980 140687403906944 s3gan.py:154] [Discriminator] (22, 2) -> aux_logits=(22, 2), y_predicted=(22, 2)
+---------------------------------------------------s3gan.py/get_class_embedding,s
+I0409 08:05:13.755425 140687403906944 s3gan.py:175] [Discriminator] embedded_y for projection: (22, 1536)
+---------------------------------------------------s3gan.py/get_class_embedding,e
+---------------------------------------------------s3gan.py/discriminator_with_additonal_heads,e
+---------------------------------------------------s3gan.py/create_loss,e
+---------------------------------------------------modular_gan.py/create_logits,e
+################################################## mode == tf.estimator.ModeKeys.EVAL  ########################
+INFO:tensorflow:Done calling model_fn.
+I0409 08:05:13.886535 140687403906944 estimator.py:1171] Done calling model_fn.
+INFO:tensorflow:Starting evaluation at 2020-04-09T08:05:13Z
+I0409 08:05:13.914783 140687403906944 evaluation.py:255] Starting evaluation at 2020-04-09T08:05:13Z
+INFO:tensorflow:Graph was finalized.
+I0409 08:05:14.114033 140687403906944 monitored_session.py:246] Graph was finalized.
+2020-04-09 08:05:14.114947: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-04-09 08:05:14.115683: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1561] Found device 0 with properties: 
+pciBusID: 0000:00:04.0 name: Tesla P100-PCIE-16GB computeCapability: 6.0
+coreClock: 1.3285GHz coreCount: 56 deviceMemorySize: 15.90GiB deviceMemoryBandwidth: 681.88GiB/s
+2020-04-09 08:05:14.115740: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2020-04-09 08:05:14.115770: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2020-04-09 08:05:14.115795: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2020-04-09 08:05:14.115823: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2020-04-09 08:05:14.115847: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2020-04-09 08:05:14.115893: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2020-04-09 08:05:14.115918: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-04-09 08:05:14.116029: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-04-09 08:05:14.116770: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-04-09 08:05:14.117386: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1703] Adding visible gpu devices: 0
+2020-04-09 08:05:14.117456: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1102] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-04-09 08:05:14.117474: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1108]      0 
+2020-04-09 08:05:14.117487: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1121] 0:   N 
+2020-04-09 08:05:14.117631: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-04-09 08:05:14.118307: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-04-09 08:05:14.118990: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1247] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14652 MB memory) -> physical GPU (device: 0, name: Tesla P100-PCIE-16GB, pci bus id: 0000:00:04.0, compute capability: 6.0)
+INFO:tensorflow:Restoring parameters from /tmp/absl_testing/695705/model.ckpt-2144
+I0409 08:05:14.120404 140687403906944 saver.py:1293] Restoring parameters from /tmp/absl_testing/695705/model.ckpt-2144
+INFO:tensorflow:Running local_init_op.
+I0409 08:05:14.614299 140687403906944 session_manager.py:505] Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+I0409 08:05:14.638680 140687403906944 session_manager.py:508] Done running local_init_op.
+INFO:tensorflow:Evaluation [1/10]
+I0409 08:05:16.247737 140687403906944 evaluation.py:167] Evaluation [1/10]
+INFO:tensorflow:Evaluation [2/10]
+I0409 08:05:16.360214 140687403906944 evaluation.py:167] Evaluation [2/10]
+INFO:tensorflow:Evaluation [3/10]
+I0409 08:05:16.466269 140687403906944 evaluation.py:167] Evaluation [3/10]
+INFO:tensorflow:Evaluation [4/10]
+I0409 08:05:16.572568 140687403906944 evaluation.py:167] Evaluation [4/10]
+INFO:tensorflow:Evaluation [5/10]
+I0409 08:05:16.677999 140687403906944 evaluation.py:167] Evaluation [5/10]
+INFO:tensorflow:Evaluation [6/10]
+I0409 08:05:16.783547 140687403906944 evaluation.py:167] Evaluation [6/10]
+INFO:tensorflow:Evaluation [7/10]
+I0409 08:05:16.888800 140687403906944 evaluation.py:167] Evaluation [7/10]
+INFO:tensorflow:Evaluation [8/10]
+I0409 08:05:16.993200 140687403906944 evaluation.py:167] Evaluation [8/10]
+INFO:tensorflow:Evaluation [9/10]
+I0409 08:05:17.098315 140687403906944 evaluation.py:167] Evaluation [9/10]
+INFO:tensorflow:Evaluation [10/10]
+I0409 08:05:17.204238 140687403906944 evaluation.py:167] Evaluation [10/10]
+INFO:tensorflow:Inference Time : 3.33675s
+I0409 08:05:17.251721 140687403906944 evaluation.py:273] Inference Time : 3.33675s
+INFO:tensorflow:Finished evaluation at 2020-04-09-08:05:17
+I0409 08:05:17.251939 140687403906944 evaluation.py:276] Finished evaluation at 2020-04-09-08:05:17
+INFO:tensorflow:Saving dict for global step 2144: accuracy = 1.0, global_step = 2144, loss = 5.6420293
+I0409 08:05:17.252116 140687403906944 estimator.py:2066] Saving dict for global step 2144: accuracy = 1.0, global_step = 2144, loss = 5.6420293
+INFO:tensorflow:Saving 'checkpoint_path' summary for global step 2144: /tmp/absl_testing/695705/model.ckpt-2144
+I0409 08:05:17.252673 140687403906944 estimator.py:2127] Saving 'checkpoint_path' summary for global step 2144: /tmp/absl_testing/695705/model.ckpt-2144
+INFO:tensorflow:global_step/sec: 1.28626
+I0409 08:05:47.847707 140687403906944 basic_session_run_hooks.py:702] global_step/sec: 1.28626
+INFO:tensorflow:loss = 1.0028188e-05, step = 2200 (77.745 sec)
+I0409 08:05:47.848965 140687403906944 basic_session_run_hooks.py:260] loss = 1.0028188e-05, step = 2200 (77.745 sec)
+INFO:tensorflow:global_step/sec: 1.86314
+I0409 08:06:41.520606 140687403906944 basic_session_run_hooks.py:702] global_step/sec: 1.86314
+INFO:tensorflow:loss = 1.32621, step = 2300 (53.673 sec)
+I0409 08:06:41.521692 140687403906944 basic_session_run_hooks.py:260] loss = 1.32621, step = 2300 (53.673 sec)
+INFO:tensorflow:global_step/sec: 1.86308
+I0409 08:07:35.195207 140687403906944 basic_session_run_hooks.py:702] global_step/sec: 1.86308
+INFO:tensorflow:loss = 0.016047727, step = 2400 (53.675 sec)
+I0409 08:07:35.196421 140687403906944 basic_session_run_hooks.py:260] loss = 0.016047727, step = 2400 (53.675 sec)
+INFO:tensorflow:global_step/sec: 1.86417
+I0409 08:08:28.838343 140687403906944 basic_session_run_hooks.py:702] global_step/sec: 1.86417
+INFO:tensorflow:loss = 5.9212733e-05, step = 2500 (53.643 sec)
+I0409 08:08:28.839409 140687403906944 basic_session_run_hooks.py:260] loss = 5.9212733e-05, step = 2500 (53.643 sec)
+INFO:tensorflow:global_step/sec: 1.86332
+I0409 08:09:22.506114 140687403906944 basic_session_run_hooks.py:702] global_step/sec: 1.86332
+INFO:tensorflow:loss = 0.19057587, step = 2600 (53.668 sec)
+I0409 08:09:22.507050 140687403906944 basic_session_run_hooks.py:260] loss = 0.19057587, step = 2600 (53.668 sec)
+INFO:tensorflow:global_step/sec: 1.86342
+I0409 08:10:16.170912 140687403906944 basic_session_run_hooks.py:702] global_step/sec: 1.86342
+INFO:tensorflow:loss = 0.45954812, step = 2700 (53.665 sec)
+I0409 08:10:16.172137 140687403906944 basic_session_run_hooks.py:260] loss = 0.45954812, step = 2700 (53.665 sec)
+INFO:tensorflow:global_step/sec: 1.86403
+I0409 08:11:09.818073 140687403906944 basic_session_run_hooks.py:702] global_step/sec: 1.86403
+INFO:tensorflow:loss = 0.00047679397, step = 2800 (53.647 sec)
+I0409 08:11:09.819156 140687403906944 basic_session_run_hooks.py:260] loss = 0.00047679397, step = 2800 (53.647 sec)
+INFO:tensorflow:global_step/sec: 1.86452
+I0409 08:12:03.451228 140687403906944 basic_session_run_hooks.py:702] global_step/sec: 1.86452
+INFO:tensorflow:loss = 0.00060424523, step = 2900 (53.633 sec)
+I0409 08:12:03.452279 140687403906944 basic_session_run_hooks.py:260] loss = 0.00060424523, step = 2900 (53.633 sec)
+INFO:tensorflow:global_step/sec: 1.86494
+I0409 08:12:57.072321 140687403906944 basic_session_run_hooks.py:702] global_step/sec: 1.86494
+INFO:tensorflow:loss = 3.0792599, step = 3000 (53.621 sec)
+I0409 08:12:57.073480 140687403906944 basic_session_run_hooks.py:260] loss = 3.0792599, step = 3000 (53.621 sec)
+INFO:tensorflow:global_step/sec: 1.86595
+I0409 08:13:50.664207 140687403906944 basic_session_run_hooks.py:702] global_step/sec: 1.86595
+INFO:tensorflow:loss = 0.68989766, step = 3100 (53.592 sec)
+I0409 08:13:50.665249 140687403906944 basic_session_run_hooks.py:260] loss = 0.68989766, step = 3100 (53.592 sec)
+INFO:tensorflow:global_step/sec: 1.86535
+I0409 08:14:44.273425 140687403906944 basic_session_run_hooks.py:702] global_step/sec: 1.86535
+INFO:tensorflow:loss = 0.011989167, step = 3200 (53.609 sec)
+I0409 08:14:44.274498 140687403906944 basic_session_run_hooks.py:260] loss = 0.011989167, step = 3200 (53.609 sec)
+INFO:tensorflow:Calling checkpoint listeners before saving checkpoint 3218...
+I0409 08:14:53.380756 140687403906944 basic_session_run_hooks.py:614] Calling checkpoint listeners before saving checkpoint 3218...
+INFO:tensorflow:Saving checkpoints for 3218 into /tmp/absl_testing/695705/model.ckpt.
+I0409 08:14:53.381063 140687403906944 basic_session_run_hooks.py:618] Saving checkpoints for 3218 into /tmp/absl_testing/695705/model.ckpt.
+INFO:tensorflow:Calling checkpoint listeners after saving checkpoint 3218...
+I0409 08:15:09.039122 140687403906944 basic_session_run_hooks.py:626] Calling checkpoint listeners after saving checkpoint 3218...
+INFO:tensorflow:Skip the current checkpoint eval due to throttle secs (600 secs).
+I0409 08:15:09.039517 140687403906944 training.py:528] Skip the current checkpoint eval due to throttle secs (600 secs).
+INFO:tensorflow:global_step/sec: 1.44361
+I0409 08:15:53.544408 140687403906944 basic_session_run_hooks.py:702] global_step/sec: 1.44361
+INFO:tensorflow:loss = 0.00029696312, step = 3300 (69.271 sec)
+I0409 08:15:53.545581 140687403906944 basic_session_run_hooks.py:260] loss = 0.00029696312, step = 3300 (69.271 sec)
+INFO:tensorflow:global_step/sec: 1.86473
+I0409 08:16:47.171632 140687403906944 basic_session_run_hooks.py:702] global_step/sec: 1.86473
+INFO:tensorflow:loss = 0.0019123247, step = 3400 (53.627 sec)
+I0409 08:16:47.172771 140687403906944 basic_session_run_hooks.py:260] loss = 0.0019123247, step = 3400 (53.627 sec)
+INFO:tensorflow:global_step/sec: 1.86498
+I0409 08:17:40.791337 140687403906944 basic_session_run_hooks.py:702] global_step/sec: 1.86498
+INFO:tensorflow:loss = 0.0011457048, step = 3500 (53.620 sec)
+I0409 08:17:40.792571 140687403906944 basic_session_run_hooks.py:260] loss = 0.0011457048, step = 3500 (53.620 sec)
+INFO:tensorflow:global_step/sec: 1.86654
+I0409 08:18:34.366377 140687403906944 basic_session_run_hooks.py:702] global_step/sec: 1.86654
+INFO:tensorflow:loss = 0.0005304808, step = 3600 (53.575 sec)
+I0409 08:18:34.367686 140687403906944 basic_session_run_hooks.py:260] loss = 0.0005304808, step = 3600 (53.575 sec)
+INFO:tensorflow:global_step/sec: 1.86642
+I0409 08:19:27.944890 140687403906944 basic_session_run_hooks.py:702] global_step/sec: 1.86642
+INFO:tensorflow:loss = 0.0009854061, step = 3700 (53.578 sec)
+I0409 08:19:27.945837 140687403906944 basic_session_run_hooks.py:260] loss = 0.0009854061, step = 3700 (53.578 sec)
+INFO:tensorflow:global_step/sec: 1.86448
+I0409 08:20:21.579136 140687403906944 basic_session_run_hooks.py:702] global_step/sec: 1.86448
+INFO:tensorflow:loss = 0.00024563345, step = 3800 (53.634 sec)
+I0409 08:20:21.580131 140687403906944 basic_session_run_hooks.py:260] loss = 0.00024563345, step = 3800 (53.634 sec)
+INFO:tensorflow:global_step/sec: 1.86432
+I0409 08:21:15.217955 140687403906944 basic_session_run_hooks.py:702] global_step/sec: 1.86432
+INFO:tensorflow:loss = 0.004014821, step = 3900 (53.639 sec)
+I0409 08:21:15.218993 140687403906944 basic_session_run_hooks.py:260] loss = 0.004014821, step = 3900 (53.639 sec)
+INFO:tensorflow:global_step/sec: 1.8647
+I0409 08:22:08.845924 140687403906944 basic_session_run_hooks.py:702] global_step/sec: 1.8647
+INFO:tensorflow:loss = 0.0004513028, step = 4000 (53.628 sec)
+I0409 08:22:08.846923 140687403906944 basic_session_run_hooks.py:260] loss = 0.0004513028, step = 4000 (53.628 sec)
+INFO:tensorflow:global_step/sec: 1.86456
+I0409 08:23:02.477935 140687403906944 basic_session_run_hooks.py:702] global_step/sec: 1.86456
+INFO:tensorflow:loss = 0.0025406894, step = 4100 (53.632 sec)
+I0409 08:23:02.479190 140687403906944 basic_session_run_hooks.py:260] loss = 0.0025406894, step = 4100 (53.632 sec)
+INFO:tensorflow:global_step/sec: 1.86471
+I0409 08:23:56.105605 140687403906944 basic_session_run_hooks.py:702] global_step/sec: 1.86471
+INFO:tensorflow:loss = 0.0008776251, step = 4200 (53.627 sec)
+I0409 08:23:56.106673 140687403906944 basic_session_run_hooks.py:260] loss = 0.0008776251, step = 4200 (53.627 sec)
+INFO:tensorflow:global_step/sec: 1.86487
+I0409 08:24:49.728585 140687403906944 basic_session_run_hooks.py:702] global_step/sec: 1.86487
+INFO:tensorflow:loss = 0.013254125, step = 4300 (53.624 sec)
+I0409 08:24:49.730210 140687403906944 basic_session_run_hooks.py:260] loss = 0.013254125, step = 4300 (53.624 sec)
+INFO:tensorflow:Calling checkpoint listeners before saving checkpoint 4308...
+I0409 08:24:53.478958 140687403906944 basic_session_run_hooks.py:614] Calling checkpoint listeners before saving checkpoint 4308...
+INFO:tensorflow:Saving checkpoints for 4308 into /tmp/absl_testing/695705/model.ckpt.
+I0409 08:24:53.479235 140687403906944 basic_session_run_hooks.py:618] Saving checkpoints for 4308 into /tmp/absl_testing/695705/model.ckpt.
+INFO:tensorflow:Calling checkpoint listeners after saving checkpoint 4308...
+I0409 08:25:10.862063 140687403906944 basic_session_run_hooks.py:626] Calling checkpoint listeners after saving checkpoint 4308...
+--------------------------------------------datasets.py/eval_input_fn,s
+W0409 08:25:10.869795 140687403906944 datasets.py:170] No TPUContext, using unmodified dataset seed 547.
+I0409 08:25:10.869915 140687403906944 datasets.py:348] eval_input_fn(): params={'use_tpu': False, 'train_batch_size': 8, 'batch_size': 8} seed=547
+--------befor self._load_dataset------------------split = validation self._eval_split= validation
+--------------------------------------------datasets.py/_load_dataset,s
+!!!!!!!!!!!!!!!!!!!!!!----load_local_datasets,  _local_test_ds_dir= /content/drive/My Drive/drive/gan/test
+-----------------------------------------get_local_datasets,s
+-----------------------------------------get_local_datasets,e
+--------------------------------------------modular_gan.py/_preprocess_fn,s
+I0409 08:25:10.972908 140687403906944 api.py:587] _preprocess_fn(): images=Tensor("args_0:0", shape=(128, 128, 3), dtype=float32), labels=Tensor("args_1:0", shape=(), dtype=int32), seed=547
+--------------------------------------------modular_gan.py/_preprocess_fn,e
+I0409 08:25:11.014213 140687403906944 api.py:587] Passing random offset: Tensor("Cast:0", shape=(), dtype=int32) with data ({'images': <tf.Tensor 'args_1:0' shape=(128, 128, 3) dtype=float32>, 'z': <tf.Tensor 'args_3:0' shape=(120,) dtype=float32>, 'sampled_labels': <tf.Tensor 'args_2:0' shape=() dtype=int32>}, <tf.Tensor 'args_4:0' shape=() dtype=int32>).
+--------------------------------------------datasets.py/eval_input_fn,e
+INFO:tensorflow:Calling model_fn.
+I0409 08:25:11.050076 140687403906944 estimator.py:1169] Calling model_fn.
+--------------------------------------------modular_gan.py/model_fn,s
+I0409 08:25:11.050374 140687403906944 modular_gan.py:569] model_fn(): features={'images': <tf.Tensor 'IteratorGetNext:1' shape=(8, 128, 128, 3) dtype=float32>, 'z': <tf.Tensor 'IteratorGetNext:3' shape=(8, 120) dtype=float32>, 'sampled_labels': <tf.Tensor 'IteratorGetNext:2' shape=(8,) dtype=int32>, '_RANDOM_OFFSET': <tf.Tensor 'IteratorGetNext:0' shape=(8,) dtype=int32>}, labels=Tensor("IteratorGetNext:4", shape=(8,), dtype=int32),mode=eval, params={'use_tpu': False, 'train_batch_size': 8, 'batch_size': 8}
+#Clean old summaries from previous calls to model_fn().
+# Get features and labels for each sub-step.
+--------------------------------------------modular_gan.py/_split_inputs_and_generate_samples,s
+I0409 08:25:11.065335 140687403906944 resnet_biggan.py:236] [Generator] inputs are z=(8, 120), y=(8, 2)
+I0409 08:25:11.087165 140687403906944 resnet_biggan.py:262] [Generator] z0=(8, 20), z_per_block=['(8, 20)', '(8, 20)', '(8, 20)', '(8, 20)', '(8, 20)'], y_per_block=['(8, 148)', '(8, 148)', '(8, 148)', '(8, 148)', '(8, 148)']
+I0409 08:25:11.164959 140687403906944 resnet_biggan.py:150] [Block] (8, 4, 4, 1536) (z=(8, 20), y=(8, 148)) -> (8, 8, 8, 1536)
+I0409 08:25:11.219264 140687403906944 resnet_biggan.py:150] [Block] (8, 8, 8, 1536) (z=(8, 20), y=(8, 148)) -> (8, 16, 16, 768)
+I0409 08:25:11.271203 140687403906944 resnet_biggan.py:150] [Block] (8, 16, 16, 768) (z=(8, 20), y=(8, 148)) -> (8, 32, 32, 384)
+I0409 08:25:11.328368 140687403906944 resnet_biggan.py:150] [Block] (8, 32, 32, 384) (z=(8, 20), y=(8, 148)) -> (8, 64, 64, 192)
+I0409 08:25:11.328610 140687403906944 resnet_biggan.py:289] [Generator] Applying non-local block to (8, 64, 64, 192)
+I0409 08:25:11.437643 140687403906944 resnet_biggan.py:150] [Block] (8, 64, 64, 192) (z=(8, 20), y=(8, 148)) -> (8, 128, 128, 96)
+I0409 08:25:11.437889 140687403906944 resnet_biggan.py:294] [Generator] before final processing: (8, 128, 128, 96)
+I0409 08:25:11.482521 140687403906944 resnet_biggan.py:300] [Generator] after final processing: (8, 128, 128, 3)
+--------------------------------------------modular_gan.py/_split_inputs_and_generate_samples,e
+---------------------------------------------------modular_gan.py/create_logits,s
+I0409 08:25:11.488106 140687403906944 tpu_random.py:86] Got global random offset: Tensor("strided_slice:0", shape=(), dtype=int32)
+---------------------------------------------------s3gan.py/create_loss,s
+W0409 08:25:11.491884 140687403906944 s3gan.py:237] Computing fake images for every sub step separately.
+I0409 08:25:11.492146 140687403906944 resnet_biggan.py:236] [Generator] inputs are z=(8, 120), y=(8, 2)
+I0409 08:25:11.499943 140687403906944 resnet_biggan.py:262] [Generator] z0=(8, 20), z_per_block=['(8, 20)', '(8, 20)', '(8, 20)', '(8, 20)', '(8, 20)'], y_per_block=['(8, 148)', '(8, 148)', '(8, 148)', '(8, 148)', '(8, 148)']
+I0409 08:25:11.528412 140687403906944 resnet_biggan.py:150] [Block] (8, 4, 4, 1536) (z=(8, 20), y=(8, 148)) -> (8, 8, 8, 1536)
+I0409 08:25:11.551663 140687403906944 resnet_biggan.py:150] [Block] (8, 8, 8, 1536) (z=(8, 20), y=(8, 148)) -> (8, 16, 16, 768)
+I0409 08:25:11.574808 140687403906944 resnet_biggan.py:150] [Block] (8, 16, 16, 768) (z=(8, 20), y=(8, 148)) -> (8, 32, 32, 384)
+I0409 08:25:11.597914 140687403906944 resnet_biggan.py:150] [Block] (8, 32, 32, 384) (z=(8, 20), y=(8, 148)) -> (8, 64, 64, 192)
+I0409 08:25:11.598251 140687403906944 resnet_biggan.py:289] [Generator] Applying non-local block to (8, 64, 64, 192)
+I0409 08:25:11.646543 140687403906944 resnet_biggan.py:150] [Block] (8, 64, 64, 192) (z=(8, 20), y=(8, 148)) -> (8, 128, 128, 96)
+I0409 08:25:11.646809 140687403906944 resnet_biggan.py:294] [Generator] before final processing: (8, 128, 128, 96)
+I0409 08:25:11.666205 140687403906944 resnet_biggan.py:300] [Generator] after final processing: (8, 128, 128, 3)
+I0409 08:25:11.668644 140687403906944 s3gan.py:249] bs=8, rotated_bs=4, num_rot_examples=1
+---------------------------------------------------s3gan.py/merge_with_rotation_data,s
+---------------------------------------------------s3gan.py/merge_with_rotation_data,e
+--------------------------------------------------------------------s3gan.py/discriminator_with_additonal_heads,s
+I0409 08:25:11.703156 140687403906944 resnet_biggan.py:379] [Discriminator] inputs are x=(22, 128, 128, 3), y=(22, 2)
+I0409 08:25:11.748852 140687403906944 resnet_biggan.py:150] [Block] (22, 128, 128, 3) (z=None, y=(22, 2)) -> (22, 64, 64, 96)
+I0409 08:25:11.749085 140687403906944 resnet_biggan.py:398] [Discriminator] Applying non-local block to (22, 64, 64, 96)
+I0409 08:25:12.026551 140687403906944 resnet_biggan.py:150] [Block] (22, 64, 64, 96) (z=None, y=(22, 2)) -> (22, 32, 32, 192)
+I0409 08:25:12.072149 140687403906944 resnet_biggan.py:150] [Block] (22, 32, 32, 192) (z=None, y=(22, 2)) -> (22, 16, 16, 384)
+I0409 08:25:12.113092 140687403906944 resnet_biggan.py:150] [Block] (22, 16, 16, 384) (z=None, y=(22, 2)) -> (22, 8, 8, 768)
+I0409 08:25:12.156001 140687403906944 resnet_biggan.py:150] [Block] (22, 8, 8, 768) (z=None, y=(22, 2)) -> (22, 4, 4, 1536)
+I0409 08:25:12.182980 140687403906944 resnet_biggan.py:150] [Block] (22, 4, 4, 1536) (z=None, y=(22, 2)) -> (22, 4, 4, 1536)
+I0409 08:25:12.183221 140687403906944 resnet_biggan.py:403] [Discriminator] before final processing: (22, 4, 4, 1536)
+I0409 08:25:12.199115 140687403906944 resnet_biggan.py:407] [Discriminator] after final processing: (22, 4, 4, 1536)
+I0409 08:25:12.208837 140687403906944 resnet_biggan.py:422] [Discriminator] embedded_y for projection: (22, 1536)
+I0409 08:25:12.226046 140687403906944 s3gan.py:133] [Discriminator] rotation head (22, 1536) -> Tensor("discriminator_rotation/score_classify/add:0", shape=(22, 4), dtype=float32)
+I0409 08:25:12.243659 140687403906944 s3gan.py:154] [Discriminator] (22, 2) -> aux_logits=(22, 2), y_predicted=(22, 2)
+---------------------------------------------------s3gan.py/get_class_embedding,s
+I0409 08:25:12.251961 140687403906944 s3gan.py:175] [Discriminator] embedded_y for projection: (22, 1536)
+---------------------------------------------------s3gan.py/get_class_embedding,e
+---------------------------------------------------s3gan.py/discriminator_with_additonal_heads,e
+---------------------------------------------------s3gan.py/create_loss,e
+---------------------------------------------------modular_gan.py/create_logits,e
+################################################## mode == tf.estimator.ModeKeys.EVAL  ########################
+INFO:tensorflow:Done calling model_fn.
+I0409 08:25:12.382240 140687403906944 estimator.py:1171] Done calling model_fn.
+INFO:tensorflow:Starting evaluation at 2020-04-09T08:25:12Z
+I0409 08:25:12.404643 140687403906944 evaluation.py:255] Starting evaluation at 2020-04-09T08:25:12Z
+INFO:tensorflow:Graph was finalized.
+I0409 08:25:12.621844 140687403906944 monitored_session.py:246] Graph was finalized.
+2020-04-09 08:25:12.622655: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-04-09 08:25:12.623305: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1561] Found device 0 with properties: 
+pciBusID: 0000:00:04.0 name: Tesla P100-PCIE-16GB computeCapability: 6.0
+coreClock: 1.3285GHz coreCount: 56 deviceMemorySize: 15.90GiB deviceMemoryBandwidth: 681.88GiB/s
+2020-04-09 08:25:12.623370: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2020-04-09 08:25:12.623403: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2020-04-09 08:25:12.623431: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2020-04-09 08:25:12.623477: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2020-04-09 08:25:12.623500: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2020-04-09 08:25:12.623550: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2020-04-09 08:25:12.623576: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-04-09 08:25:12.623691: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-04-09 08:25:12.624371: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-04-09 08:25:12.624910: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1703] Adding visible gpu devices: 0
+2020-04-09 08:25:12.624962: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1102] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-04-09 08:25:12.624981: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1108]      0 
+2020-04-09 08:25:12.624994: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1121] 0:   N 
+2020-04-09 08:25:12.625132: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-04-09 08:25:12.625804: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-04-09 08:25:12.626334: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1247] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14652 MB memory) -> physical GPU (device: 0, name: Tesla P100-PCIE-16GB, pci bus id: 0000:00:04.0, compute capability: 6.0)
+INFO:tensorflow:Restoring parameters from /tmp/absl_testing/695705/model.ckpt-4308
+I0409 08:25:12.628028 140687403906944 saver.py:1293] Restoring parameters from /tmp/absl_testing/695705/model.ckpt-4308
+INFO:tensorflow:Running local_init_op.
+I0409 08:25:13.131906 140687403906944 session_manager.py:505] Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+I0409 08:25:13.163709 140687403906944 session_manager.py:508] Done running local_init_op.
+INFO:tensorflow:Evaluation [1/10]
+I0409 08:25:14.782630 140687403906944 evaluation.py:167] Evaluation [1/10]
+INFO:tensorflow:Evaluation [2/10]
+I0409 08:25:14.894624 140687403906944 evaluation.py:167] Evaluation [2/10]
+INFO:tensorflow:Evaluation [3/10]
+I0409 08:25:14.999607 140687403906944 evaluation.py:167] Evaluation [3/10]
+INFO:tensorflow:Evaluation [4/10]
+I0409 08:25:15.104661 140687403906944 evaluation.py:167] Evaluation [4/10]
+INFO:tensorflow:Evaluation [5/10]
+I0409 08:25:15.209453 140687403906944 evaluation.py:167] Evaluation [5/10]
+INFO:tensorflow:Evaluation [6/10]
+I0409 08:25:15.313989 140687403906944 evaluation.py:167] Evaluation [6/10]
+INFO:tensorflow:Evaluation [7/10]
+I0409 08:25:15.419067 140687403906944 evaluation.py:167] Evaluation [7/10]
+INFO:tensorflow:Evaluation [8/10]
+I0409 08:25:15.524705 140687403906944 evaluation.py:167] Evaluation [8/10]
+INFO:tensorflow:Evaluation [9/10]
+I0409 08:25:15.628774 140687403906944 evaluation.py:167] Evaluation [9/10]
+INFO:tensorflow:Evaluation [10/10]
+I0409 08:25:15.733803 140687403906944 evaluation.py:167] Evaluation [10/10]
+INFO:tensorflow:Inference Time : 3.38556s
+I0409 08:25:15.790403 140687403906944 evaluation.py:273] Inference Time : 3.38556s
+INFO:tensorflow:Finished evaluation at 2020-04-09-08:25:15
+I0409 08:25:15.790688 140687403906944 evaluation.py:276] Finished evaluation at 2020-04-09-08:25:15
+INFO:tensorflow:Saving dict for global step 4308: accuracy = 1.0, global_step = 4308, loss = 5.5728426
+I0409 08:25:15.790867 140687403906944 estimator.py:2066] Saving dict for global step 4308: accuracy = 1.0, global_step = 4308, loss = 5.5728426
+INFO:tensorflow:Saving 'checkpoint_path' summary for global step 4308: /tmp/absl_testing/695705/model.ckpt-4308
+I0409 08:25:15.801505 140687403906944 estimator.py:2127] Saving 'checkpoint_path' summary for global step 4308: /tmp/absl_testing/695705/model.ckpt-4308
+INFO:tensorflow:global_step/sec: 1.31648
+I0409 08:26:05.688728 140687403906944 basic_session_run_hooks.py:702] global_step/sec: 1.31648
+INFO:tensorflow:loss = 9.481895e-05, step = 4400 (75.960 sec)
+I0409 08:26:05.689745 140687403906944 basic_session_run_hooks.py:260] loss = 9.481895e-05, step = 4400 (75.960 sec)
+INFO:tensorflow:global_step/sec: 1.86407
+I0409 08:26:59.334961 140687403906944 basic_session_run_hooks.py:702] global_step/sec: 1.86407
+INFO:tensorflow:loss = 0.0076554264, step = 4500 (53.646 sec)
+I0409 08:26:59.336076 140687403906944 basic_session_run_hooks.py:260] loss = 0.0076554264, step = 4500 (53.646 sec)
+INFO:tensorflow:global_step/sec: 1.86494
+I0409 08:27:52.956079 140687403906944 basic_session_run_hooks.py:702] global_step/sec: 1.86494
+INFO:tensorflow:loss = 0.022468664, step = 4600 (53.621 sec)
+I0409 08:27:52.957106 140687403906944 basic_session_run_hooks.py:260] loss = 0.022468664, step = 4600 (53.621 sec)
+INFO:tensorflow:global_step/sec: 1.86457
+I0409 08:28:46.587798 140687403906944 basic_session_run_hooks.py:702] global_step/sec: 1.86457
+INFO:tensorflow:loss = 0.001597682, step = 4700 (53.632 sec)
+I0409 08:28:46.588872 140687403906944 basic_session_run_hooks.py:260] loss = 0.001597682, step = 4700 (53.632 sec)
+INFO:tensorflow:global_step/sec: 1.86545
+I0409 08:29:40.194091 140687403906944 basic_session_run_hooks.py:702] global_step/sec: 1.86545
+INFO:tensorflow:loss = 0.012700432, step = 4800 (53.606 sec)
+I0409 08:29:40.195196 140687403906944 basic_session_run_hooks.py:260] loss = 0.012700432, step = 4800 (53.606 sec)
+INFO:tensorflow:global_step/sec: 1.86578
+I0409 08:30:33.791057 140687403906944 basic_session_run_hooks.py:702] global_step/sec: 1.86578
+INFO:tensorflow:loss = 0.027864628, step = 4900 (53.597 sec)
+I0409 08:30:33.792059 140687403906944 basic_session_run_hooks.py:260] loss = 0.027864628, step = 4900 (53.597 sec)
+INFO:tensorflow:Calling checkpoint listeners before saving checkpoint 5000...
+I0409 08:31:26.879986 140687403906944 basic_session_run_hooks.py:614] Calling checkpoint listeners before saving checkpoint 5000...
+INFO:tensorflow:Saving checkpoints for 5000 into /tmp/absl_testing/695705/model.ckpt.
+I0409 08:31:26.880276 140687403906944 basic_session_run_hooks.py:618] Saving checkpoints for 5000 into /tmp/absl_testing/695705/model.ckpt.
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow/python/training/saver.py:971: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+W0409 08:31:45.159044 140687403906944 deprecation.py:323] From /usr/local/lib/python3.6/dist-packages/tensorflow/python/training/saver.py:971: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+INFO:tensorflow:Calling checkpoint listeners after saving checkpoint 5000...
+I0409 08:31:45.658336 140687403906944 basic_session_run_hooks.py:626] Calling checkpoint listeners after saving checkpoint 5000...
+INFO:tensorflow:Skip the current checkpoint eval due to throttle secs (600 secs).
+I0409 08:31:45.658735 140687403906944 training.py:528] Skip the current checkpoint eval due to throttle secs (600 secs).
+--------------------------------------------datasets.py/eval_input_fn,s
+W0409 08:31:45.666790 140687403906944 datasets.py:170] No TPUContext, using unmodified dataset seed 547.
+I0409 08:31:45.667054 140687403906944 datasets.py:348] eval_input_fn(): params={'use_tpu': False, 'train_batch_size': 8, 'batch_size': 8} seed=547
+--------befor self._load_dataset------------------split = validation self._eval_split= validation
+--------------------------------------------datasets.py/_load_dataset,s
+!!!!!!!!!!!!!!!!!!!!!!----load_local_datasets,  _local_test_ds_dir= /content/drive/My Drive/drive/gan/test
+-----------------------------------------get_local_datasets,s
+-----------------------------------------get_local_datasets,e
+--------------------------------------------modular_gan.py/_preprocess_fn,s
+I0409 08:31:45.771192 140687403906944 api.py:587] _preprocess_fn(): images=Tensor("args_0:0", shape=(128, 128, 3), dtype=float32), labels=Tensor("args_1:0", shape=(), dtype=int32), seed=547
+--------------------------------------------modular_gan.py/_preprocess_fn,e
+I0409 08:31:45.814952 140687403906944 api.py:587] Passing random offset: Tensor("Cast:0", shape=(), dtype=int32) with data ({'images': <tf.Tensor 'args_1:0' shape=(128, 128, 3) dtype=float32>, 'z': <tf.Tensor 'args_3:0' shape=(120,) dtype=float32>, 'sampled_labels': <tf.Tensor 'args_2:0' shape=() dtype=int32>}, <tf.Tensor 'args_4:0' shape=() dtype=int32>).
+--------------------------------------------datasets.py/eval_input_fn,e
+INFO:tensorflow:Calling model_fn.
+I0409 08:31:45.836894 140687403906944 estimator.py:1169] Calling model_fn.
+--------------------------------------------modular_gan.py/model_fn,s
+I0409 08:31:45.837254 140687403906944 modular_gan.py:569] model_fn(): features={'images': <tf.Tensor 'IteratorGetNext:1' shape=(8, 128, 128, 3) dtype=float32>, 'z': <tf.Tensor 'IteratorGetNext:3' shape=(8, 120) dtype=float32>, 'sampled_labels': <tf.Tensor 'IteratorGetNext:2' shape=(8,) dtype=int32>, '_RANDOM_OFFSET': <tf.Tensor 'IteratorGetNext:0' shape=(8,) dtype=int32>}, labels=Tensor("IteratorGetNext:4", shape=(8,), dtype=int32),mode=eval, params={'use_tpu': False, 'train_batch_size': 8, 'batch_size': 8}
+#Clean old summaries from previous calls to model_fn().
+# Get features and labels for each sub-step.
+--------------------------------------------modular_gan.py/_split_inputs_and_generate_samples,s
+I0409 08:31:45.847566 140687403906944 resnet_biggan.py:236] [Generator] inputs are z=(8, 120), y=(8, 2)
+I0409 08:31:45.861729 140687403906944 resnet_biggan.py:262] [Generator] z0=(8, 20), z_per_block=['(8, 20)', '(8, 20)', '(8, 20)', '(8, 20)', '(8, 20)'], y_per_block=['(8, 148)', '(8, 148)', '(8, 148)', '(8, 148)', '(8, 148)']
+I0409 08:31:45.933861 140687403906944 resnet_biggan.py:150] [Block] (8, 4, 4, 1536) (z=(8, 20), y=(8, 148)) -> (8, 8, 8, 1536)
+I0409 08:31:45.986129 140687403906944 resnet_biggan.py:150] [Block] (8, 8, 8, 1536) (z=(8, 20), y=(8, 148)) -> (8, 16, 16, 768)
+I0409 08:31:46.038700 140687403906944 resnet_biggan.py:150] [Block] (8, 16, 16, 768) (z=(8, 20), y=(8, 148)) -> (8, 32, 32, 384)
+I0409 08:31:46.095243 140687403906944 resnet_biggan.py:150] [Block] (8, 32, 32, 384) (z=(8, 20), y=(8, 148)) -> (8, 64, 64, 192)
+I0409 08:31:46.095501 140687403906944 resnet_biggan.py:289] [Generator] Applying non-local block to (8, 64, 64, 192)
+I0409 08:31:46.204962 140687403906944 resnet_biggan.py:150] [Block] (8, 64, 64, 192) (z=(8, 20), y=(8, 148)) -> (8, 128, 128, 96)
+I0409 08:31:46.205204 140687403906944 resnet_biggan.py:294] [Generator] before final processing: (8, 128, 128, 96)
+I0409 08:31:46.248145 140687403906944 resnet_biggan.py:300] [Generator] after final processing: (8, 128, 128, 3)
+--------------------------------------------modular_gan.py/_split_inputs_and_generate_samples,e
+---------------------------------------------------modular_gan.py/create_logits,s
+I0409 08:31:46.253130 140687403906944 tpu_random.py:86] Got global random offset: Tensor("strided_slice:0", shape=(), dtype=int32)
+---------------------------------------------------s3gan.py/create_loss,s
+W0409 08:31:46.256715 140687403906944 s3gan.py:237] Computing fake images for every sub step separately.
+I0409 08:31:46.256967 140687403906944 resnet_biggan.py:236] [Generator] inputs are z=(8, 120), y=(8, 2)
+I0409 08:31:46.264565 140687403906944 resnet_biggan.py:262] [Generator] z0=(8, 20), z_per_block=['(8, 20)', '(8, 20)', '(8, 20)', '(8, 20)', '(8, 20)'], y_per_block=['(8, 148)', '(8, 148)', '(8, 148)', '(8, 148)', '(8, 148)']
+I0409 08:31:46.291234 140687403906944 resnet_biggan.py:150] [Block] (8, 4, 4, 1536) (z=(8, 20), y=(8, 148)) -> (8, 8, 8, 1536)
+I0409 08:31:46.313508 140687403906944 resnet_biggan.py:150] [Block] (8, 8, 8, 1536) (z=(8, 20), y=(8, 148)) -> (8, 16, 16, 768)
+I0409 08:31:46.337239 140687403906944 resnet_biggan.py:150] [Block] (8, 16, 16, 768) (z=(8, 20), y=(8, 148)) -> (8, 32, 32, 384)
+I0409 08:31:46.358539 140687403906944 resnet_biggan.py:150] [Block] (8, 32, 32, 384) (z=(8, 20), y=(8, 148)) -> (8, 64, 64, 192)
+I0409 08:31:46.358715 140687403906944 resnet_biggan.py:289] [Generator] Applying non-local block to (8, 64, 64, 192)
+I0409 08:31:46.407640 140687403906944 resnet_biggan.py:150] [Block] (8, 64, 64, 192) (z=(8, 20), y=(8, 148)) -> (8, 128, 128, 96)
+I0409 08:31:46.407872 140687403906944 resnet_biggan.py:294] [Generator] before final processing: (8, 128, 128, 96)
+I0409 08:31:46.427285 140687403906944 resnet_biggan.py:300] [Generator] after final processing: (8, 128, 128, 3)
+I0409 08:31:46.429710 140687403906944 s3gan.py:249] bs=8, rotated_bs=4, num_rot_examples=1
+---------------------------------------------------s3gan.py/merge_with_rotation_data,s
+---------------------------------------------------s3gan.py/merge_with_rotation_data,e
+--------------------------------------------------------------------s3gan.py/discriminator_with_additonal_heads,s
+I0409 08:31:46.463480 140687403906944 resnet_biggan.py:379] [Discriminator] inputs are x=(22, 128, 128, 3), y=(22, 2)
+I0409 08:31:46.511431 140687403906944 resnet_biggan.py:150] [Block] (22, 128, 128, 3) (z=None, y=(22, 2)) -> (22, 64, 64, 96)
+I0409 08:31:46.511706 140687403906944 resnet_biggan.py:398] [Discriminator] Applying non-local block to (22, 64, 64, 96)
+I0409 08:31:46.611479 140687403906944 resnet_biggan.py:150] [Block] (22, 64, 64, 96) (z=None, y=(22, 2)) -> (22, 32, 32, 192)
+I0409 08:31:46.658048 140687403906944 resnet_biggan.py:150] [Block] (22, 32, 32, 192) (z=None, y=(22, 2)) -> (22, 16, 16, 384)
+I0409 08:31:46.702386 140687403906944 resnet_biggan.py:150] [Block] (22, 16, 16, 384) (z=None, y=(22, 2)) -> (22, 8, 8, 768)
+I0409 08:31:46.752640 140687403906944 resnet_biggan.py:150] [Block] (22, 8, 8, 768) (z=None, y=(22, 2)) -> (22, 4, 4, 1536)
+I0409 08:31:46.786339 140687403906944 resnet_biggan.py:150] [Block] (22, 4, 4, 1536) (z=None, y=(22, 2)) -> (22, 4, 4, 1536)
+I0409 08:31:46.786640 140687403906944 resnet_biggan.py:403] [Discriminator] before final processing: (22, 4, 4, 1536)
+I0409 08:31:46.806294 140687403906944 resnet_biggan.py:407] [Discriminator] after final processing: (22, 4, 4, 1536)
+I0409 08:31:46.814273 140687403906944 resnet_biggan.py:422] [Discriminator] embedded_y for projection: (22, 1536)
+I0409 08:31:46.832903 140687403906944 s3gan.py:133] [Discriminator] rotation head (22, 1536) -> Tensor("discriminator_rotation/score_classify/add:0", shape=(22, 4), dtype=float32)
+I0409 08:31:46.851505 140687403906944 s3gan.py:154] [Discriminator] (22, 2) -> aux_logits=(22, 2), y_predicted=(22, 2)
+---------------------------------------------------s3gan.py/get_class_embedding,s
+I0409 08:31:46.860172 140687403906944 s3gan.py:175] [Discriminator] embedded_y for projection: (22, 1536)
+---------------------------------------------------s3gan.py/get_class_embedding,e
+---------------------------------------------------s3gan.py/discriminator_with_additonal_heads,e
+---------------------------------------------------s3gan.py/create_loss,e
+---------------------------------------------------modular_gan.py/create_logits,e
+################################################## mode == tf.estimator.ModeKeys.EVAL  ########################
+INFO:tensorflow:Done calling model_fn.
+I0409 08:31:46.985280 140687403906944 estimator.py:1171] Done calling model_fn.
+INFO:tensorflow:Starting evaluation at 2020-04-09T08:31:47Z
+I0409 08:31:47.007092 140687403906944 evaluation.py:255] Starting evaluation at 2020-04-09T08:31:47Z
+INFO:tensorflow:Graph was finalized.
+I0409 08:31:47.220370 140687403906944 monitored_session.py:246] Graph was finalized.
+2020-04-09 08:31:47.221077: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-04-09 08:31:47.221805: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1561] Found device 0 with properties: 
+pciBusID: 0000:00:04.0 name: Tesla P100-PCIE-16GB computeCapability: 6.0
+coreClock: 1.3285GHz coreCount: 56 deviceMemorySize: 15.90GiB deviceMemoryBandwidth: 681.88GiB/s
+2020-04-09 08:31:47.221866: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2020-04-09 08:31:47.221917: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2020-04-09 08:31:47.221941: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2020-04-09 08:31:47.221981: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2020-04-09 08:31:47.222002: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2020-04-09 08:31:47.222049: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2020-04-09 08:31:47.222079: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-04-09 08:31:47.222210: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-04-09 08:31:47.222861: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-04-09 08:31:47.223404: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1703] Adding visible gpu devices: 0
+2020-04-09 08:31:47.223472: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1102] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-04-09 08:31:47.223495: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1108]      0 
+2020-04-09 08:31:47.223515: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1121] 0:   N 
+2020-04-09 08:31:47.223656: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-04-09 08:31:47.224393: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-04-09 08:31:47.225047: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1247] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14652 MB memory) -> physical GPU (device: 0, name: Tesla P100-PCIE-16GB, pci bus id: 0000:00:04.0, compute capability: 6.0)
+INFO:tensorflow:Restoring parameters from /tmp/absl_testing/695705/model.ckpt-5000
+I0409 08:31:47.226244 140687403906944 saver.py:1293] Restoring parameters from /tmp/absl_testing/695705/model.ckpt-5000
+INFO:tensorflow:Running local_init_op.
+I0409 08:31:47.723707 140687403906944 session_manager.py:505] Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+I0409 08:31:47.748164 140687403906944 session_manager.py:508] Done running local_init_op.
+INFO:tensorflow:Evaluation [1/10]
+I0409 08:31:49.488846 140687403906944 evaluation.py:167] Evaluation [1/10]
+INFO:tensorflow:Evaluation [2/10]
+I0409 08:31:49.596980 140687403906944 evaluation.py:167] Evaluation [2/10]
+INFO:tensorflow:Evaluation [3/10]
+I0409 08:31:49.704746 140687403906944 evaluation.py:167] Evaluation [3/10]
+INFO:tensorflow:Evaluation [4/10]
+I0409 08:31:49.810660 140687403906944 evaluation.py:167] Evaluation [4/10]
+INFO:tensorflow:Evaluation [5/10]
+I0409 08:31:49.917439 140687403906944 evaluation.py:167] Evaluation [5/10]
+INFO:tensorflow:Evaluation [6/10]
+I0409 08:31:50.022525 140687403906944 evaluation.py:167] Evaluation [6/10]
+INFO:tensorflow:Evaluation [7/10]
+I0409 08:31:50.127207 140687403906944 evaluation.py:167] Evaluation [7/10]
+INFO:tensorflow:Evaluation [8/10]
+I0409 08:31:50.230845 140687403906944 evaluation.py:167] Evaluation [8/10]
+INFO:tensorflow:Evaluation [9/10]
+I0409 08:31:50.335835 140687403906944 evaluation.py:167] Evaluation [9/10]
+INFO:tensorflow:Evaluation [10/10]
+I0409 08:31:50.440676 140687403906944 evaluation.py:167] Evaluation [10/10]
+INFO:tensorflow:Inference Time : 3.48231s
+I0409 08:31:50.489648 140687403906944 evaluation.py:273] Inference Time : 3.48231s
+INFO:tensorflow:Finished evaluation at 2020-04-09-08:31:50
+I0409 08:31:50.489814 140687403906944 evaluation.py:276] Finished evaluation at 2020-04-09-08:31:50
+INFO:tensorflow:Saving dict for global step 5000: accuracy = 1.0, global_step = 5000, loss = 5.3793206
+I0409 08:31:50.489982 140687403906944 estimator.py:2066] Saving dict for global step 5000: accuracy = 1.0, global_step = 5000, loss = 5.3793206
+INFO:tensorflow:Saving 'checkpoint_path' summary for global step 5000: /tmp/absl_testing/695705/model.ckpt-5000
+I0409 08:31:50.490515 140687403906944 estimator.py:2127] Saving 'checkpoint_path' summary for global step 5000: /tmp/absl_testing/695705/model.ckpt-5000
+INFO:tensorflow:Loss for final step: 0.0027544915.
+I0409 08:31:50.593750 140687403906944 estimator.py:350] Loss for final step: 0.0027544915.
+-----------------------testSingleTrainingStepArchitectures,e
+[       OK ] S3GANTest.testSingleTrainingStepArchitectures
+[ RUN      ] S3GANTest.test_session
+[  SKIPPED ] S3GANTest.test_session
+----------------------------------------------------------------------
+Ran 2 tests in 2856.922s
+
+OK (skipped=1)

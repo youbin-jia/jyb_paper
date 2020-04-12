@@ -1,0 +1,20 @@
+I0408 03:11:30.376099 139967323350912 estimator.py:2066] Saving dict for global step 146: accuracy = 0.635, global_step = 146, loss = 0.6859584
+I0408 03:20:33.026834 139967323350912 estimator.py:2066] Saving dict for global step 260: accuracy = 0.6125, global_step = 260, loss = 0.18358886
+I0408 03:30:03.401185 139967323350912 estimator.py:2066] Saving dict for global step 393: accuracy = 0.645, global_step = 393, loss = 0.2516889
+I0408 03:39:35.980827 139967323350912 estimator.py:2066] Saving dict for global step 540: accuracy = 0.605, global_step = 540, loss = 0.12934159
+I0408 03:59:27.997534 139967323350912 estimator.py:2066] Saving dict for global step 874: accuracy = 0.625, global_step = 874, loss = 0.023016656
+I0408 04:09:29.857093 139967323350912 estimator.py:2066] Saving dict for global step 1046: accuracy = 0.6225, global_step = 1046, loss = 0.030044042
+I0408 04:29:07.173049 139967323350912 estimator.py:2066] Saving dict for global step 1388: accuracy = 0.6325, global_step = 1388, loss = 0.031692795
+I0408 04:39:08.160472 139967323350912 estimator.py:2066] Saving dict for global step 1561: accuracy = 0.61, global_step = 1561, loss = 0.031426944
+I0408 04:48:51.277507 139967323350912 estimator.py:2066] Saving dict for global step 1875: accuracy = 0.6125, global_step = 1875, loss = 0.01323722
+I0408 04:58:55.508586 139967323350912 estimator.py:2066] Saving dict for global step 2260: accuracy = 0.6525, global_step = 2260, loss = 0.016205365
+I0408 05:08:55.316641 139967323350912 estimator.py:2066] Saving dict for global step 2643: accuracy = 0.64, global_step = 2643, loss = 0.020589089
+I0408 05:18:55.972380 139967323350912 estimator.py:2066] Saving dict for global step 3027: accuracy = 0.65, global_step = 3027, loss = 0.07052995
+I0408 05:38:52.607797 139967323350912 estimator.py:2066] Saving dict for global step 3809: accuracy = 0.65, global_step = 3809, loss = 0.21925695
+I0408 05:48:54.267988 139967323350912 estimator.py:2066] Saving dict for global step 4196: accuracy = 0.645, global_step = 4196, loss = 0.02378651
+I0408 05:58:56.413111 139967323350912 estimator.py:2066] Saving dict for global step 4582: accuracy = 0.615, global_step = 4582, loss = 0.03449844
+I0408 06:08:57.339001 139967323350912 estimator.py:2066] Saving dict for global step 4967: accuracy = 0.6525, global_step = 4967, loss = 0.0028934863
+I0408 06:10:21.793786 139967323350912 estimator.py:2066] Saving dict for global step 5000: accuracy = 0.6475, global_step = 5000, loss = 0.033438288
+6.413111 139967323350912 estimator.py:2066] Saving dict for global step 4582: accuracy = 0.615, global_step = 4582, loss = 0.03449844
+I0408 06:08:57.339001 139967323350912 estimator.py:2066] Saving dict for global step 4967: accuracy = 0.6525, global_step = 4967, loss = 0.0028934863
+I0408 06:10:21.793786 139967323350912 estimator.py:2066] Saving dict for global step 5000: accuracy = 0.6475, global_step = 5000, loss = 0.033438288
